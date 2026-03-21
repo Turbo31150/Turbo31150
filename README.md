@@ -31,7 +31,6 @@ En parallèle : trading algorithmique multi-IA, transcription multilingue, autom
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
 
 ### IA / ML
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
@@ -53,33 +52,19 @@ En parallèle : trading algorithmique multi-IA, transcription multilingue, autom
 > OS Linux entièrement reconfiguré autour d'une IA centrale. Pas un assistant. Un système nerveux.
 - 658 handlers MCP • 5 GPU / 48GB VRAM • 320 000 lignes
 - Interface vocale 24/7 • Contrôle navigateur CDP • Agents autonomes
-- Cluster multi-modèles : DeepSeek, Qwen, Claude, Gemini
 
 ### 🎤 [Lumen — Transcription Multilingue Temps Réel](https://github.com/Turbo31150/lumen-transcription-multilangue)
 > Transcription audio/vidéo en temps réel. 3 modes, 5 espaces de travail, multilingue natif.
-- Whisper CUDA optimisé • Modes : live / fichier / stream
-- Interface web : [turbo31150.github.io/lumen-transcription-multilangue](https://turbo31150.github.io/lumen-transcription-multilangue/)
+- [Demo live](https://turbo31150.github.io/lumen-transcription-multilangue/)
 
 ### 📈 [TradeOracle — Trading Algorithmique IA](https://github.com/Turbo31150/TradeOracle)
 > Système de trading multi-modèles avec consensus IA, détection de signaux et exécution automatique.
-- Multi-IA voting • MEXC Futures • Signaux BREAKOUT / REVERSAL / MOMENTUM
-- TP/SL automatisés • Alertes Telegram temps réel
 
 ### 📚 [Bibliothèque Prompts Multi-IA](https://github.com/Turbo31150/bibliotheque-prompts-multi-ia)
-> Collection structurée de prompts optimisés pour Claude, GPT, Gemini, DeepSeek et modèles locaux.
+> Collection structurée de prompts optimisés pour Claude, GPT, Gemini, DeepSeek.
 
 ### 👶 [BABYSITTER-PRO-AUTOMATION](https://github.com/Turbo31150/BABYSITTER-PRO-AUTOMATION)
-> Automatisation complète d'une activité de babysitting — zéro intervention humaine.
-- n8n • Telegram bot • Google Calendar • Notifications intelligentes
-
-### 🔊 [jarvis-whisper-flow](https://github.com/Turbo31150/jarvis-whisper-flow)
-> Pipeline Whisper CUDA temps réel intégré à JARVIS. Voix → texte → action en millisecondes.
-
-### 🤝 [jarvis-cowork](https://github.com/Turbo31150/jarvis-cowork)
-> Espace de travail collaboratif IA — sessions de co-développement entre humain et agents autonomes.
-
-### 🧩 [jarvis-agent-sdk](https://github.com/Turbo31150/jarvis-agent-sdk)
-> SDK pour créer, déployer et orchestrer des agents JARVIS compatibles MCP.
+> Automatisation complète d'une activité de babysitting — n8n • Telegram • Google Calendar.
 
 ---
 
@@ -97,7 +82,7 @@ En parallèle : trading algorithmique multi-IA, transcription multilingue, autom
 
 ## 💼 Freelance & Contact
 
-Disponible pour des **missions IA** : agents autonomes, architectures LLM, automatisation, OS sur mesure, trading algorithmique.
+Disponible pour des **missions IA** : agents autonomes, architectures LLM, automatisation, OS sur mesure.
 
 | | |
 |---|---|
