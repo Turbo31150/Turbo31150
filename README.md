@@ -1,30 +1,115 @@
-# Franck Delmas — AI Developer & Systems Architect
+<div align="center">
 
-> Building production-grade AI systems. Not demos — real infrastructure.
->
-> ## What I Build
->
-> **JARVIS** — A distributed cognitive OS running 24/7 on a multi-GPU Linux cluster (5 GPUs, 40 GB VRAM). Autonomous trading, voice control, multi-agent orchestration.
->
-> **Lumen** — Real-time multilingual transcription workstation. WhisperFlow STT + neural TTS + multi-AI routing across 12 languages.
->
-> **TradeOracle** — Autonomous crypto trading agent scanning 2800+ pairs. Gemini 3 + MCP pipeline with sniper execution.
->
-> ## Tech Stack
->
-> `Python` `TypeScript` `Docker` `CUDA` `React` `FastAPI` `Redis` `PostgreSQL` `n8n` `Whisper` `Claude SDK` `Gemini API`
->
-> ## Numbers
->
-> - 320K+ lines of code
-> - - 67 GitHub repositories
->   - - 5 GPUs / 40 GB VRAM cluster
->     - - 658 MCP handlers
->       - - 19 documented projects
->         - - 55 EUR/h freelance rate
->          
->           - ## Links
->          
->           - - [Codeur.com](https://www.codeur.com/-6666zlkh) — Freelance profile
->             - - [Devpost](https://devpost.com/miningexpert31) — Hackathon portfolio
->               - - [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1) — Professional network
+# 🧠 Franck Hlb — Turbo31150
+
+### Développeur IA & Architecte Systèmes | Toulouse, France
+
+#### *Je ne construis pas des outils IA. Je construis des systèmes qui pensent.*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/franck-hlb-80bb231b1/)
+[![Codeur.com](https://img.shields.io/badge/Codeur.com-Freelance-FF6B35?style=for-the-badge)](https://www.codeur.com/-6666zlkh)
+[![GitHub followers](https://img.shields.io/github/followers/Turbo31150?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Turbo31150)
+
+</div>
+
+---
+
+## 🧬 Qui suis-je ?
+
+Autodidacte. Builder. Obssédé par les systèmes autonomes.
+
+J'ai reconstruit un OS Linux depuis ses fondations pour qu'une IA ne soit pas *posée dessus* — mais qu'elle **soit** le système. Le résultat s'appelle **JARVIS** : 320 000 lignes de code, 658 handlers MCP, un cluster 5 GPU / 48GB VRAM, une interface vocale 24/7 et un cerveau qui orchestre tout en temps réel.
+
+En parallèle : trading algorithmique multi-IA, transcription multilingue, automatisation métier. Chaque projet est une brique d'une même vision — des systèmes qui évoluent avec chaque action.
+
+---
+
+## ⚡ Stack
+
+### Langages
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+
+### IA / ML
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Whisper](https://img.shields.io/badge/Whisper-412991?style=flat-square&logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP_Protocol-00E5A0?style=flat-square)
+
+### Infra / DevOps
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+---
+
+## 🚀 Projets phares
+
+### 🧠 [JARVIS — OS Cognitif Autonome](https://github.com/Turbo31150/jarvis-linux)
+> OS Linux entièrement reconfiguré autour d'une IA centrale. Pas un assistant. Un système nerveux.
+- 658 handlers MCP • 5 GPU / 48GB VRAM • 320 000 lignes
+- Interface vocale 24/7 • Contrôle navigateur CDP • Agents autonomes
+- Cluster multi-modèles : DeepSeek, Qwen, Claude, Gemini
+
+### 🎤 [Lumen — Transcription Multilingue Temps Réel](https://github.com/Turbo31150/lumen-transcription-multilangue)
+> Transcription audio/vidéo en temps réel. 3 modes, 5 espaces de travail, multilingue natif.
+- Whisper CUDA optimisé • Modes : live / fichier / stream
+- Interface web : [turbo31150.github.io/lumen-transcription-multilangue](https://turbo31150.github.io/lumen-transcription-multilangue/)
+
+### 📈 [TradeOracle — Trading Algorithmique IA](https://github.com/Turbo31150/TradeOracle)
+> Système de trading multi-modèles avec consensus IA, détection de signaux et exécution automatique.
+- Multi-IA voting • MEXC Futures • Signaux BREAKOUT / REVERSAL / MOMENTUM
+- TP/SL automatisés • Alertes Telegram temps réel
+
+### 📚 [Bibliothèque Prompts Multi-IA](https://github.com/Turbo31150/bibliotheque-prompts-multi-ia)
+> Collection structurée de prompts optimisés pour Claude, GPT, Gemini, DeepSeek et modèles locaux.
+
+### 👶 [BABYSITTER-PRO-AUTOMATION](https://github.com/Turbo31150/BABYSITTER-PRO-AUTOMATION)
+> Automatisation complète d'une activité de babysitting — zéro intervention humaine.
+- n8n • Telegram bot • Google Calendar • Notifications intelligentes
+
+### 🔊 [jarvis-whisper-flow](https://github.com/Turbo31150/jarvis-whisper-flow)
+> Pipeline Whisper CUDA temps réel intégré à JARVIS. Voix → texte → action en millisecondes.
+
+### 🤝 [jarvis-cowork](https://github.com/Turbo31150/jarvis-cowork)
+> Espace de travail collaboratif IA — sessions de co-développement entre humain et agents autonomes.
+
+### 🧩 [jarvis-agent-sdk](https://github.com/Turbo31150/jarvis-agent-sdk)
+> SDK pour créer, déployer et orchestrer des agents JARVIS compatibles MCP.
+
+---
+
+## 📊 Stats GitHub
+
+<div align="center">
+
+![Turbo31150's GitHub stats](https://github-readme-stats.vercel.app/api?username=Turbo31150&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Turbo31150&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 💼 Freelance & Contact
+
+Disponible pour des **missions IA** : agents autonomes, architectures LLM, automatisation, OS sur mesure, trading algorithmique.
+
+| | |
+|---|---|
+| 💼 **Missions** | [codeur.com/-6666zlkh](https://www.codeur.com/-6666zlkh) |
+| 🔗 **LinkedIn** | [franck-hlb](https://www.linkedin.com/in/franck-hlb-80bb231b1/) |
+| 🐙 **GitHub** | [Turbo31150](https://github.com/Turbo31150) |
+| 📍 **Localisation** | Toulouse, France |
+
+---
+
+<div align="center">
+
+> 🧠 Construit avec de l'asyncio, de la sueur et 2h du matin — par un autodidacte qui refuse les limites.
+
+</div>
