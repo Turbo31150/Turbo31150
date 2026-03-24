@@ -1,6 +1,6 @@
 <div align="center">
 
-# Franc Delmas
+# Franck Delmas
 
 **AI/Linux Systems Architect — Creator of JARVIS OS**
 
