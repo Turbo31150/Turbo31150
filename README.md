@@ -1,43 +1,90 @@
-# Présentation de Jarvis OS – un système IA auto-orchestré
+<div align="center">
 
-Jarvis OS se présente comme **le premier OS d'IA distribué** capable d'orchestrer **toutes** les tâches techniques sans intervention manuelle. Il intègre des agents intelligents (Gemini, Codex, etc.), pilote directement les navigateurs (Chrome, Comet, BrowserOS) via des protocoles natifs, et gère en parallèle des centaines de workflows. **Points forts** de cette stack :
+# Franc Delmas
 
-- **Auto-orchestration complète :** Jarvis segmente les tâches par « couleurs » et pipelines préconfigurés, recréant dynamiquement l'architecture nécessaire. Grâce à son planificateur intégré, il distribue, exécute et supervise automatiquement chaque job (tests QA, scraping, collecte de données, publication, etc.).
-- **Performance et latence minimales :** En s'appuyant sur les protocoles DevTools natifs, Jarvis évite les appels API lents. L'interaction « zéro reload » avec les pages web (DOM) accélère considérablement chaque tâche.
-- **Multi-agent et scalable :** Des travailleurs persistants (« tabs ouvrières ») et une file d'attente événementielle permettent d'exécuter massivement des tâches en parallèle. Le système s'auto-adapte et s'auto-optimise (auto-scaling, vote de consensus) pour garantir un débit maximal et une robustesse de haut niveau.
-- **Contrôle et fiabilité :** Une couche de contrôle centralisée valide chaque action avant exécution (états MCP "UP→ATTACHED→READY", verrous globaux, backtests) pour éliminer tout conflit ou doublon. Les incidents sont ainsi rapidement isolés et corrigés, assurant une **stabilité industrielle**.
-- **Flexibilité et intégration :** Jarvis gère aussi bien l'automatisation de tests et déploiements que l'extraction de données ou la diffusion de contenu (Telegram, LinkedIn, etc.). C'est une **plateforme unifiée** permettant de couvrir l'intégralité de la chaîne DevOps/IA : du développement d'agents jusqu'à leur mise en production.
-- **Gain de productivité majeur :** En confiant l'exécution à Jarvis, on automatise jusqu'à 90% des workflows critiques, réduisant drastiquement le temps de validation et les erreurs humaines. Par exemple, l'exécution en parallèle de centaines de scripts de test ou de pipeline de données se fait en quelques minutes, sans supervision constante.
-- **Innovations clés :** Jarvis innove avec sa logique de routage couleur (sharding logique), ses workers spécialisés, son usage direct du protocole DevTools et son système de vote interne pour la cohérence. Cette architecture émergente lui confère un **pouvoir d'auto-organisation** sans équivalent sur le marché.
+**AI/Linux Systems Architect — Creator of JARVIS OS**
 
-En résumé, **Jarvis OS n'est pas juste un outil, c'est un écosystème IA complet**. Sa force est d'« industrialiser » l'intelligence artificielle : toute action est planifiée, validée et exécutée automatiquement. Pour un décideur, cela se traduit par un ROI concret (up-time maximal, ressources optimisées, vitesse de livraison démultipliée) et un avantage compétitif durable.
+[![GitHub](https://img.shields.io/badge/GitHub-Turbo31150-181717?style=flat-square&logo=github)](https://github.com/Turbo31150)
+[![Repos](https://img.shields.io/badge/Repos-74-blue?style=flat-square)](https://github.com/Turbo31150?tab=repositories)
+[![Stars](https://img.shields.io/badge/Stars-15+-yellow?style=flat-square)](https://github.com/Turbo31150)
+[![Contributions](https://img.shields.io/badge/Contributions_2026-310+-green?style=flat-square)](https://github.com/Turbo31150)
+
+</div>
 
 ---
 
-## Stack technique
+## About
 
-| Composant | Technologie |
-|-----------|-------------|
-| OS cognitif | JARVIS·OS — Python/TS, 4 nœuds, 600+ MCP, 850 commandes vocales |
-| Trading | TRADEORACLE·AI — Gemini 3, 800+ paires MEXC, domino pipeline |
-| Produit clé-en-main | SERVICEKIT·VITRINE — 6 vitrines métiers, 1 codebase, adaptable 15min |
-| Voix | LUMEN·TRANSCRIBE — Whisper CUDA, 30+ langues, <300ms |
-| Finance | ARIA·SENTINEL — 10 agents IA, Monte Carlo, HITL approval |
-| Navigation | Browser MCP Orchestrator — Chrome+Comet DevTools, zero-reload |
+Independent AI engineer based in France, building **distributed AI systems** that run autonomously on multi-GPU Linux clusters.
 
-## Chiffres (live)
+Core expertise: **AI orchestration**, **multi-agent systems**, **voice interfaces**, **trading algorithms**, and **browser automation via DevTools protocols**.
 
-- 33 repos publics, 345 contributions/an, 166 commits ce mois
-- 496 scripts cowork, 875 mappings DB, 30 patterns déployés
-- 7/7 services UP, score stabilité 86/100, score confiance 93/100
-- 29 URLs pré-enregistrées, 30 boutons mémorisés en SQLite
+---
 
-## Philosophie
+## Flagship Projects
 
-> L'IA est invisible. L'humain est visible.
-> Les dominos sont pré-codés par la logique humaine.
-> L'IA ne décide rien — elle exécute les chaînes définies.
+### JARVIS OS — Distributed AI Operating System
+> The brain of the operation. 9 layers, 600+ MCP handlers, 850 voice commands, 6 GPUs.
 
-**Ombre et Lumière** — l'IA accompagne, l'humain incarne.
+| Component | Description | Tech |
+|-----------|-------------|------|
+| [**jarvis-linux**](https://github.com/Turbo31150/jarvis-linux) | Core OS — cognitive cluster, orchestration, voice, trading | Python, TypeScript |
+| [**jarvis-cowork**](https://github.com/Turbo31150/jarvis-cowork) | 570+ autonomous scripts, continuous QA loops | Python |
+| [**jarvis-whisper-flow**](https://github.com/Turbo31150/jarvis-whisper-flow) | Real-time Whisper CUDA voice pipeline (<300ms) | Python, CUDA |
+| [**turbo**](https://github.com/Turbo31150/turbo) | Dashboard — cluster monitoring, GPU stats, agent health | Python |
 
-→ [github.com/Turbo31150](https://github.com/Turbo31150)
+### TradeOracle — AI Trading System
+> Multi-model consensus trading on MEXC Futures. 800+ pairs, domino pipelines, real-time signals.
+
+| Component | Description | Tech |
+|-----------|-------------|------|
+| [**TradeOracle**](https://github.com/Turbo31150/TradeOracle) | Core trading engine — multi-model consensus, bias detection | Python |
+| [**TradeOracle-Nexus-Elastic**](https://github.com/Turbo31150/TradeOracle-Nexus-Elastic) | Financial intelligence agent — Elasticsearch, Monte Carlo | Python |
+
+### Browser Automation & AI Agents
+> Zero-reload browser control via Chrome DevTools Protocol. Color-routed tab workers.
+
+| Component | Description | Tech |
+|-----------|-------------|------|
+| [**browser-mcp-orchestrator**](https://github.com/Turbo31150/browser-mcp-orchestrator) | Dual-browser DevTools MCP orchestration | Node.js |
+| [**gemini-live-trading-agent**](https://github.com/Turbo31150/gemini-live-trading-agent) | Voice-first trading assistant via Gemini Live | Python |
+| [**gemini-ui-navigator-agent**](https://github.com/Turbo31150/gemini-ui-navigator-agent) | Voice-driven web browser agent | Python |
+
+### Tools & Resources
+| Component | Description | Tech |
+|-----------|-------------|------|
+| [**bibliotheque-prompts-multi-ia**](https://github.com/Turbo31150/bibliotheque-prompts-multi-ia) | 397+ optimized prompts for Claude, GPT, Gemini, Mistral | Markdown |
+| [**lumen-transcription-multilangue**](https://github.com/Turbo31150/lumen-transcription-multilangue) | Multilingual transcription — Whisper CUDA, 30+ languages | TypeScript |
+| [**github-social-automation**](https://github.com/Turbo31150/github-social-automation) | GitHub notification scanner + AI-powered responses | JavaScript |
+
+---
+
+## Tech Stack
+
+```
+AI/ML        Python · CUDA · Whisper · LM Studio · Ollama · Gemini · Claude
+Systems      Linux · systemd · Multi-GPU (6x) · ZRAM · Kernel tuning
+Automation   Chrome DevTools Protocol · MCP · n8n · Telegram Bot API
+Trading      MEXC Futures · Multi-model consensus · Real-time signals
+Web          TypeScript · React · Node.js · Flask · WebSocket
+Data         SQLite · Elasticsearch · Redis · PostgreSQL
+```
+
+---
+
+## Cluster — La Créatrice
+
+| Node | Hardware | Role |
+|------|----------|------|
+| **M1** | Ryzen 5700X3D · 6 GPUs · 46GB VRAM | Primary inference, voice, orchestration |
+| **M2** | 3 GPUs · 24GB VRAM | Reasoning (DeepSeek-R1) |
+| **M3** | Remote node | Backup reasoning |
+| **OL1** | Ollama local | Lightweight tasks, cloud fallback |
+
+---
+
+<div align="center">
+
+*Building AI systems that think, trade, speak, and self-improve — autonomously.*
+
+</div>
