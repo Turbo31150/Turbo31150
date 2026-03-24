@@ -5,9 +5,11 @@
 **AI/Linux Systems Architect — Creator of JARVIS OS**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Turbo31150-181717?style=flat-square&logo=github)](https://github.com/Turbo31150)
+[![Email](https://img.shields.io/badge/Email-franckdelmas00%40gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:franckdelmas00@gmail.com)
 [![Repos](https://img.shields.io/badge/Repos-74-blue?style=flat-square)](https://github.com/Turbo31150?tab=repositories)
 [![Stars](https://img.shields.io/badge/Stars-15+-yellow?style=flat-square)](https://github.com/Turbo31150)
 [![Contributions](https://img.shields.io/badge/Contributions_2026-310+-green?style=flat-square)](https://github.com/Turbo31150)
+[![Location](https://img.shields.io/badge/Location-France-blue?style=flat-square&logo=openstreetmap)](https://github.com/Turbo31150)
 
 </div>
 
@@ -18,6 +20,8 @@
 Independent AI engineer based in France, building **distributed AI systems** that run autonomously on multi-GPU Linux clusters.
 
 Core expertise: **AI orchestration**, **multi-agent systems**, **voice interfaces**, **trading algorithms**, and **browser automation via DevTools protocols**.
+
+**Contact:** [franckdelmas00@gmail.com](mailto:franckdelmas00@gmail.com)
 
 ---
 
