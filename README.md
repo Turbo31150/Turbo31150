@@ -23,6 +23,37 @@ Independent AI engineer building **distributed autonomous systems** on multi-GPU
 
 ---
 
+
+---
+
+## Ce que j apporte a votre entreprise
+
+> **Je transforme vos idees IA en systemes autonomes qui tournent en production, 24/7, sans intervention.**
+
+**TPE/PME, startup, SaaS ou agence ?** Voici ce que je peux faire pour vous :
+
+- **Automatiser vos processus metier** : remplacement de taches manuelles par des workflows IA (gain 60-80%)
+- **Deployer des agents IA autonomes** : surveillance, analyse, prise de decision en continu
+- **Creer des interfaces vocales** : commande vocale temps reel (<300ms)
+- **Trading algorithmique** : consensus multi-modeles, gestion de risque automatisee
+
+### Chiffres cles
+| | |
+|---|---|
+| **600+** agents MCP orchestres | **320 000+** lignes de code en production |
+| **6 GPU / 46 GB VRAM** cluster | **35** repositories publics |
+| **55 EUR/h** ou forfait sur devis | **Full remote** Fuseau FR (UTC+1) |
+
+### Offres packagees
+
+| Offre | Duree | Ce que vous obtenez |
+|-------|-------|---------------------|
+| **Audit IA Express** | 1 semaine | Analyse process + recommandations IA + POC rapide |
+| **Agent Vocal sur mesure** | 10 jours | Interface vocale Whisper CUDA deployee |
+| **Automatisation Metier** | 2-4 semaines | Workflow n8n + agents IA + monitoring cle en main |
+
+**Me contacter** : [Codeur.com](https://www.codeur.com/users/733953) | [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1/) | franckdelmas00@gmail.com
+
 ## :rocket: What I'm Building
 
 ### JARVIS OS — Distributed AI Operating System
