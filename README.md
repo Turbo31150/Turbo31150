@@ -54,6 +54,37 @@ Independent AI engineer building **distributed autonomous systems** on multi-GPU
 
 **Me contacter** : [Codeur.com](https://www.codeur.com/users/733953) | [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1/) | franckdelmas00@gmail.com
 
+
+---
+
+## :briefcase: What I Can Do For Your Business
+
+> **I turn your AI ideas into autonomous systems running in production — 24/7, zero manual intervention.**
+
+**Are you a startup, SMB, SaaS company or agency?** Here's what I deliver:
+
+- **Automate business processes** — replace manual tasks with AI workflows (60-80% time savings)
+- **Deploy autonomous AI agents** — monitoring, analysis, and decision-making around the clock
+- **Build voice interfaces** — real-time voice commands (<300ms latency) via Whisper + CUDA
+- **Set up algorithmic trading** — multi-model consensus, automated risk management
+
+### :chart_with_upwards_trend: Key Numbers
+| | |
+|---|---|
+| **600+** MCP agents orchestrated | **320,000+** lines of production code |
+| **6 GPUs / 46 GB VRAM** personal cluster | **35** public repositories |
+| **55 EUR/h** or fixed-price quote | **Full remote** — FR timezone (UTC+1) |
+
+### :dart: Packaged Offers
+
+| Offer | Duration | What You Get |
+|-------|----------|--------------|
+| **AI Audit Express** | 1 week | Process analysis + concrete AI recommendations + quick POC |
+| **Custom Voice Agent** | 10 days | Whisper CUDA voice interface deployed & connected to your tools |
+| **Business Automation** | 2-4 weeks | n8n workflow + AI agents + monitoring — turnkey |
+
+:envelope: **Contact me**: [Codeur.com](https://www.codeur.com/users/733953) | [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1/) | franckdelmas00@gmail.com
+
 ## :rocket: What I'm Building
 
 ### JARVIS OS — Distributed AI Operating System
