@@ -32,6 +32,7 @@ I help businesses deploy AI systems that save time and reduce costs. Available f
 
 - 💼 [Freelance profile on Codeur.com](https://www.codeur.com/-6666zlkh)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1)
+- 🌐 [Portfolio](https://turbo31150.github.io/franckdelmas.dev/)
 - 📧 franck@franckdelmas.dev
 - 📍 France — Remote worldwide
 
