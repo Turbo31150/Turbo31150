@@ -1,41 +1,58 @@
-# Franck Delmas — AI Systems Architect
+# Franck Delmas - Freelance AI Engineer
 
-**I build production-grade AI systems that actually work.** From autonomous agents to voice pipelines, I deliver infrastructure that runs 24/7 on real hardware.
+I build AI systems that run in production. Not demos. Not toy prototypes. Real agents, voice pipelines, automation flows, and GPU-backed infrastructure that save time for businesses.
 
-## What I Build
+## What I Deliver
 
-🔧 **Autonomous AI Agents** — Multi-model orchestration with failover, consensus, and self-repair
-🎙️ **Voice AI Pipelines** — Real-time STT/TTS with <300ms latency on GPU (Whisper + CUDA)
-📊 **Trading Engines** — Multi-model consensus for crypto futures with risk management
-🖥️ **GPU Infrastructure** — 6-GPU cluster (46GB VRAM), distributed inference, thermal management
+- Autonomous AI agents that handle repetitive work 24/7 with supervision, failover, and self-repair
+- Private voice AI systems with real-time transcription and command handling on your own infrastructure
+- Business automation workflows that connect APIs, CRMs, email, databases, and internal tools
+- Multi-model decision engines for complex routing, monitoring, and trading use cases
 
-## Key Projects
+## Typical Missions
 
-| Project | What It Does | Why It Matters |
-|---------|-------------|----------------|
-| [JARVIS OS](https://github.com/Turbo31150/jarvis-linux) | Distributed AI operating system | 600+ MCP handlers, 87 tools orchestrated |
-| [TradeOracle](https://github.com/Turbo31150/TradeOracle) | Multi-model trading engine | Consensus-based decisions on MEXC Futures |
-| [WhisperFlow](https://github.com/Turbo31150/jarvis-whisper-flow) | Real-time voice pipeline | <300ms GPU-accelerated transcription |
-| [LUMEN](https://github.com/Turbo31150/lumen) | Live multilingual transcription | 50+ languages, Whisper large-v3 |
+- AI agent proof of concept in 10 days
+- Custom voice assistant for team or customer workflows
+- End-to-end business automation with Python and n8n
+- Audit and deployment of local or hybrid multi-GPU AI infrastructure
 
-## Tech Stack
+## Why Work With Me
 
-`Python` `TypeScript` `CUDA` `Docker` `Linux` `React` `Node.js` `n8n` `Redis` `PostgreSQL`
+- 320,000+ lines of production code
+- 75 repositories, including 35+ public/open-source projects
+- Personal 6-GPU lab with 46 GB VRAM for real-world testing and deployment
+- Winner, Airia AI Agents Hackathon 2026
+- Stack: Python, TypeScript, CUDA, Docker, Linux, React, n8n, Redis, PostgreSQL
+
+## Selected Projects
+
+| Project | What it does | Why it matters |
+|---|---|---|
+| [JARVIS OS](https://github.com/Turbo31150/jarvis-linux) | Distributed AI operating system | Autonomous orchestration, browser agents, voice, routing, and recovery |
+| [TradeOracle](https://github.com/Turbo31150/TradeOracle) | Multi-model trading engine | Consensus-based decision flows with risk controls |
+| [WhisperFlow](https://github.com/Turbo31150/jarvis-whisper-flow) | Real-time voice pipeline | GPU-accelerated transcription and command routing |
+| [LUMEN](https://github.com/Turbo31150/lumen) | Live multilingual transcription | Real-time multilingual speech processing |
 
 ## Infrastructure
 
-**"La Créatrice"** — 6 NVIDIA GPUs (RTX 3080 + RTX 2060 + 4x GTX 1660S), 46GB VRAM total, Ryzen 5700X3D, 48GB RAM. Multi-node cluster with automatic failover.
+My main lab runs on a 6-GPU NVIDIA cluster with 46 GB VRAM, designed for local-first AI, distributed inference, browser automation, and production-grade orchestration.
 
-## Hire Me
+## Availability
 
-I help businesses deploy AI systems that save time and reduce costs. Available for freelance missions (remote).
+Freelance, remote, mission-based or long-term.
 
-- 💼 [Freelance profile on Codeur.com](https://www.codeur.com/-6666zlkh)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/franck-hlb-80bb231b1)
-- 🌐 [Portfolio](https://turbo31150.github.io/franckdelmas.dev/)
-- 📧 franck@franckdelmas.dev
-- 📍 France — Remote worldwide
+- Rate: 55 EUR/h or fixed-price package
+- Start: usually within 48 hours
+- Focus: TPE/PME, SaaS, automation-heavy teams, private AI deployments
+
+## Contact
+
+- Codeur: [codeur.com/-6666zlkh](https://www.codeur.com/-6666zlkh)
+- LinkedIn: [linkedin.com/in/franck-hlb-80bb231b1](https://www.linkedin.com/in/franck-hlb-80bb231b1)
+- Portfolio: [turbo31150.github.io/franckdelmas.dev](https://turbo31150.github.io/franckdelmas.dev/)
+- Email: `franck@franckdelmas.dev`
+- Location: France, remote worldwide
 
 ---
 
-*Open source contributor • 75 repositories (35+ public) • Building in public since 2024*
+Open-source builder focused on autonomous systems, local-first AI, and production deployment.
