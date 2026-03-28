@@ -187,6 +187,85 @@ I am based in **Toulouse, France** (CET/CEST timezone, UTC+1 in winter, UTC+2 in
 **Languages:** French (native), English (professional, fluent in technical contexts)
 
 
+
+
+---
+
+## Try JARVIS Right Now
+
+```bash
+# Clone and run in 30 seconds
+git clone https://github.com/Turbo31150/jarvis-core
+cd jarvis-core && pip install -r requirements.txt
+
+# Health check — see your cluster status instantly
+python3 jarvis.py health
+# Output:
+# ┌──────────────────────────────────────────────────┐
+# │  JARVIS Cluster Health        2026-03-27 14:32   │
+# ├──────┬────────────┬────────┬──────────┬──────────┤
+# │ Node │ Model      │ Status │ VRAM     │ Latency  │
+# ├──────┼────────────┼────────┼──────────┼──────────┤
+# │ M1   │ gemma-3-4b │ UP     │ 4.2/6 GB │ 0.4s     │
+# │ M3   │ qwen3-8b   │ UP     │ 9.6/10GB │ 3.2s     │
+# │ OL1  │ qwen2.5    │ UP     │ 1.2/2 GB │ 1.1s     │
+# └──────┴────────────┴────────┴──────────┴──────────┘
+# Network: 8/8 | DB: 12 tables | Uptime: 99.7%
+
+# Query any local model through smart routing
+python3 jarvis.py query "What are the best AI frameworks in 2026?"
+# → Routed to M3 (qwen3-8b, champion reliability 100%)
+# → Response in 3.2s:
+# "The top frameworks for 2026 are:
+#  1. Claude Agent SDK — production-grade multi-agent orchestration
+#  2. LangGraph — stateful agent workflows
+#  3. CrewAI — role-based agent collaboration
+#  4. DSPy — programmatic LLM pipelines"
+
+# Run the full test suite
+python3 tests/test_smoke.py
+# → test_cluster_health .............. PASS (0.8s)
+# → test_model_routing ............... PASS (1.2s)
+# → test_failover_cascade ............ PASS (2.1s)
+# → test_gpu_thermal_guard ........... PASS (0.3s)
+# → test_concurrent_queries .......... PASS (4.5s)
+# → 10/10 tests passed in 12.4s ✅
+```
+
+### Architecture at a Glance
+
+```
+User Request
+    │
+    ▼
+┌──────────────────┐     ┌─────────────┐
+│  Smart Router    │────▶│ M1 LMStudio │──▶ gemma-3-4b (fast, 0.4s)
+│  (latency +     │     │             │──▶ qwen3.5-9b (balanced)
+│   capability     │     └─────────────┘
+│   matching)      │     ┌─────────────┐
+│                  │────▶│ M3 Remote   │──▶ deepseek-r1-qwen3-8b (best quality)
+│                  │     └─────────────┘
+│                  │     ┌─────────────┐
+│                  │────▶│ OL1 Ollama  │──▶ qwen2.5:1.5b (lightweight)
+└──────────────────┘     └─────────────┘
+    │ Failover: M3 → OL1 → M1 → M2 → Gemini → Claude
+```
+
+### Project Stats
+
+| Metric | Value |
+|--------|-------|
+| Active agents | 31+ |
+| Slash commands | 40+ |
+| Skills | 30+ |
+| Plugins | 30 (2 custom + 28 marketplace) |
+| MCP servers | 11 connected |
+| GPU nodes | 4 (M1, M2, M3, OL1) |
+| Test coverage | 570+ QA scripts |
+| Uptime target | 99.5% |
+
+
+
 ---
 
 ## Fun Facts
