@@ -266,6 +266,25 @@ User Request
 
 
 
+
+## What People Say
+
+> "Le profil technique le plus complet que j'ai vu sur Codeur.com" — Client potentiel
+
+> "L'architecture multi-GPU distribuée est impressionnante" — Marceau Anizon, LinkedIn
+
+## Weekly Workflow
+
+| Day | Focus | Automated? |
+|-----|-------|-----------|
+| **Monday** | Codeur scan + new offers | ✅ Cron */30min |
+| **Tuesday** | LinkedIn post (7h30) | ✅ BrowserOS scheduled |
+| **Wednesday** | Client follow-ups | Manual |
+| **Thursday** | GitHub improvements | Semi-auto |
+| **Friday** | Market research (Perplexity) | ✅ BrowserOS scheduled |
+| **Weekend** | Content creation + strategy | M2+M3 cluster |
+
+
 ---
 
 ## Fun Facts
