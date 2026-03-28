@@ -65,3 +65,8 @@ M3 Orchestrator: deepseek-r1, mistral-7b, phi-3.1
 ## Hire Me
 
 55€/h · Remote · [Portfolio](https://turbo31150.github.io/franckdelmas.dev/) · [Codeur.com](https://codeur.com/-6666zlkh)
+
+
+---
+
+MIT License · © 2026 Franck Delmas
