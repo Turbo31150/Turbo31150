@@ -67,6 +67,55 @@ M3 Orchestrator: deepseek-r1, mistral-7b, phi-3.1
 55€/h · Remote · [Portfolio](https://turbo31150.github.io/franckdelmas.dev/) · [Codeur.com](https://codeur.com/-6666zlkh)
 
 
+
+## About Me
+
+I'm Franck Delmas, an independent AI engineer based in France. I build **distributed autonomous systems** — AI that runs on your hardware, not in someone else's cloud.
+
+My daily workflow: 600+ AI agents orchestrating voice commands, trading algorithms, browser automation, and multi-model inference across a cluster of 6 GPUs. Everything open source. Everything local.
+
+## What I Can Build For You
+
+| Service | Description | Starting at |
+|---------|-------------|-------------|
+| **Autonomous AI Agents** | Agents that work 24/7 — monitoring, analyzing, acting | 2,000€ |
+| **Voice AI Assistants** | Real-time speech-to-action, <300ms on GPU | 3,500€ |
+| **Business Automation** | Connect your tools with intelligent n8n/Python workflows | On quote |
+| **AI Infrastructure** | Multi-GPU cluster setup, model deployment, optimization | 55€/h |
+
+## How I Work
+
+```
+1. Discovery call (15 min, free) → understand your needs
+2. POC in 5-7 days → working prototype to validate
+3. Iterative development → demos every week
+4. Delivery → documented, tested, with 1 month support
+```
+
+## My Stack in Numbers
+
+```
+┌─────────────────────────────────┐
+│ 600+ autonomous AI agents       │
+│ 88   MCP tool handlers          │
+│ 2658 voice commands             │
+│ 6    NVIDIA GPUs (46GB VRAM)    │
+│ 3    machines in cluster        │
+│ 21   AI models available        │
+│ 103  SQLite databases           │
+│ 65   n8n workflows              │
+│ 320K lines of code              │
+└─────────────────────────────────┘
+```
+
+## Recent Activity
+
+- **6 freelance offers** posted on Codeur.com (9,900€ total)
+- **Hackathon Airia AI Agents 2026** — Multi-Agent Treasury Risk Platform
+- **624 LinkedIn followers** with active engagement on AI/orchestration topics
+- **20 open source repos** with Mermaid diagrams, badges, and documentation
+
+
 ---
 
 MIT License · © 2026 Franck Delmas
