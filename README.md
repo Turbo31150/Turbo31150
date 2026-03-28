@@ -1,3 +1,7 @@
+<div align="center">
+<img src="assets/jarvis-banner.png" alt="JARVIS AI" width="800">
+</div>
+
 # Franck Delmas - Freelance AI Engineer
 
 I turn AI ideas into production systems: autonomous agents, voice AI, business automation, and GPU-backed infrastructure that solve real operational work.
