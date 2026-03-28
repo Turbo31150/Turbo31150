@@ -13,6 +13,30 @@
 
 </div>
 
+
+
+## JARVIS Ecosystem
+
+```mermaid
+graph TB
+    subgraph Core
+        OS[JARVIS OS] --> Core2[JARVIS Core]
+        Core2 --> MCP[MCP Toolkit 88+]
+    end
+    subgraph AI
+        TRD[TradeOracle]
+        WF[WhisperFlow]
+        LUM[LUMEN]
+    end
+    subgraph Infra
+        CLU[Cluster 6 GPUs]
+        SQL[SQL3 103 DBs]
+        BOS[BrowserOS]
+    end
+    OS --> TRD & WF & LUM
+    OS --> CLU & SQL & BOS
+```
+
 ## What I Build
 
 | Project | Description | Stars |
