@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:6366f1&height=180&section=header&text=Projets%20de%20Franc%20Delmas&fontSize=42&fontColor=ffffff&fontAlignY=35&desc=Portfolio%20Complet%20%E2%80%94%20AI%20%2F%20Trading%20%2F%20Voice%20%2F%20Infrastructure&descSize=18&descAlignY=55&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:6366f1&height=180&section=header&text=Projets%20de%20Franck%20Delmas&fontSize=42&fontColor=ffffff&fontAlignY=35&desc=Portfolio%20Complet%20%E2%80%94%20AI%20%2F%20Trading%20%2F%20Voice%20%2F%20Infrastructure&descSize=18&descAlignY=55&animation=fadeIn" width="100%" />
 
 </div>
 

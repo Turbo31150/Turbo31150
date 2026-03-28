@@ -1,15 +1,15 @@
 # Franck Delmas - Freelance AI Engineer
 
-I build AI systems that run in production. Not demos. Not toy prototypes. Real agents, voice pipelines, automation flows, and GPU-backed infrastructure that save time for businesses.
+I turn AI ideas into production systems: autonomous agents, voice AI, business automation, and GPU-backed infrastructure that solve real operational work.
 
-## What I Deliver
+## What I Build
 
 - Autonomous AI agents that handle repetitive work 24/7 with supervision, failover, and self-repair
 - Private voice AI systems with real-time transcription and command handling on your own infrastructure
 - Business automation workflows that connect APIs, CRMs, email, databases, and internal tools
 - Multi-model decision engines for complex routing, monitoring, and trading use cases
 
-## Typical Missions
+## What Clients Hire Me For
 
 - AI agent proof of concept in 10 days
 - Custom voice assistant for team or customer workflows
@@ -35,7 +35,7 @@ I build AI systems that run in production. Not demos. Not toy prototypes. Real a
 
 ## Infrastructure
 
-My main lab runs on a 6-GPU NVIDIA cluster with 46 GB VRAM, designed for local-first AI, distributed inference, browser automation, and production-grade orchestration.
+My main lab runs on a 6-GPU NVIDIA cluster with 46 GB VRAM, designed for local-first AI, distributed inference, browser automation, and production-grade orchestration. It lets me prototype, benchmark, and deploy on real constraints instead of demo conditions.
 
 ## Availability
 
