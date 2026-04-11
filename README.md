@@ -1,38 +1,151 @@
 <div align="center">
 
-# Franck Delmas
+<!-- Header Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:6366f1&height=220&section=header&text=Franck%20Delmas&fontSize=52&fontColor=ffffff&fontAlignY=35&desc=AI%20/%20Linux%20Systems%20Architect%20%7C%20France&descSize=20&descAlignY=55&animation=fadeIn" width="100%" />
 
-### Full-Stack AI Engineer & System Architect
-
-*Building JARVIS OS — a distributed AI operating system with 928 autonomous agents*
-
-[![GitHub](https://img.shields.io/badge/GitHub-Turbo31150-181717?style=for-the-badge&logo=github)](https://github.com/Turbo31150)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Franck_Delmas-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/franck-hlb-80bb231b1)
+<!-- Badges Row -->
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Turbo31150)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/Turbo31150)
+[![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://github.com/Turbo31150)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/Turbo31150)
+[![Claude](https://img.shields.io/badge/Claude_SDK-D97706?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/Turbo31150)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/Turbo31150)
 
 </div>
 
 ---
 
-### What I Build
+## `> whoami`
 
-| Project | Description | Tech |
-|---------|-------------|------|
-| [JARVIS OS](https://github.com/Turbo31150/jarvis-linux) | Distributed AI OS — 928 agents, 6 GPUs, voice control | Python, CUDA, Docker |
-| [TradeOracle](https://github.com/Turbo31150/TradeOracle) | AI trading with multi-model consensus | Python, Gemini, MEXC |
-| [Whisper Flow](https://github.com/Turbo31150/jarvis-whisper-flow) | Real-time CUDA STT pipeline (<280ms) | Python, Whisper, CUDA |
-| [Lumen](https://github.com/Turbo31150/lumen) | Multilingual transcription UI (50+ langs) | React, TypeScript |
+Independent AI engineer building **distributed autonomous systems** on multi-GPU Linux clusters. I design architectures where hundreds of AI agents coordinate, trade, speak, and self-improve — without human intervention.
 
-### JARVIS OS at a Glance
+**Core domains:** Multi-agent orchestration | Voice interfaces | Algorithmic trading | Browser automation | GPU cluster engineering
+
+---
+
+## ⚔️ Manifeste v17.0 — Singularity
+
+> "L'industrie technologique en 2026 est marquée par la **Saaspocalypse**. Face à l'hyper-centralisation cloud, JARVIS OS propose la décentralisation absolue : 928 agents, 6 GPUs, zéro cloud. Ce n'est pas seulement une infrastructure, c'est une **architecture de liberté**."
+
+> "Le choix est simple : l'**Ombre** des solutions cloud opaques et restrictives, ou la **Lumière** de la souveraineté et de la performance brute en exécution locale."
+
+---
+
+## :rocket: What I'm Building
+
+### JARVIS OS — Distributed AI Operating System
+
+> A 9-layer autonomous operating system spanning boot to voice, running 928+ AI agents across a 6-GPU cluster.
+
+| Metric | Value |
+|--------|-------|
+| :robot: **Autonomous Agents** | 928+ MCP handlers across distributed nodes |
+| :studio_microphone: **Voice Commands** | 2,658 recognized commands, Whisper CUDA pipeline (<300ms) |
+| :wrench: **MCP Tools** | 144+ skills orchestrated via Claude Agent SDK |
+| :link: **Domino Chains** | 835 automation pipelines, self-healing |
+| :chart_with_upwards_trend: **Trading Engine** | 6-model consensus, MEXC Futures, 800+ pairs |
+| :brain: **Inference** | 6 NVIDIA GPUs / 46GB VRAM, LM Studio + Ollama |
+
+---
+
+## :gear: Tech Stack
+
+<div align="center">
+
+| Domain | Technologies |
+|--------|-------------|
+| **AI / ML** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white) ![Whisper](https://img.shields.io/badge/Whisper-412991?style=flat-square&logo=openai&logoColor=white) ![Claude](https://img.shields.io/badge/Claude_SDK-D97706?style=flat-square&logo=anthropic&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white) |
+| **Systems** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![systemd](https://img.shields.io/badge/systemd-333333?style=flat-square&logo=systemd&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
+| **Web** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) |
+| **Data** | ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
+| **Automation** | ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white) ![Telegram](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white) ![CDP](https://img.shields.io/badge/Chrome_DevTools-4285F4?style=flat-square&logo=googlechrome&logoColor=white) |
+
+</div>
+
+---
+
+## :star2: Featured Portfolio / Vitrine
+
+<div align="center">
+
+### :brain: OS & Orchestration (JARVIS)
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [**jarvis-linux**](https://github.com/Turbo31150/jarvis-linux) | Core OS — cognitive cluster, orchestration, voice, trading | Python, TS |
+| [**JARVIS-OMEGA**](https://github.com/Turbo31150/JARVIS-OMEGA) | Distributed Multi-AI Operating System (961 agents) | Multi-Stack |
+| [**JARVIS-CLUSTER**](https://github.com/Turbo31150/JARVIS-CLUSTER) | Enterprise Docker Swarm AI infrastructure | Docker |
+| [**jarvis-core**](https://github.com/Turbo31150/jarvis-core) | Unified AI orchestration engine | Python |
+| [**turbo**](https://github.com/Turbo31150/turbo) | Real-time Dashboard — GPU monitoring, agent health | Python, Web |
+
+### :chart_with_upwards_trend: Algorithmic Trading & Finance
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [**TradeOracle**](https://github.com/Turbo31150/TradeOracle) | Multi-model consensus trading engine — MEXC Futures | Python |
+| [**TradeOracle-Nexus-Elastic**](https://github.com/Turbo31150/TradeOracle-Nexus-Elastic) | Financial intelligence — Elasticsearch, Monte Carlo sims | Python |
+
+### :studio_microphone: Voice, Vision & UI Agents
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [**jarvis-whisper-flow**](https://github.com/Turbo31150/jarvis-whisper-flow) | Real-time Whisper CUDA voice pipeline (<300ms latency) | Python, CUDA |
+| [**lumen**](https://github.com/Turbo31150/lumen) | Real-time multilingual transcription UI (50+ languages) | React, TS |
+| [**browser-mcp-orchestrator**](https://github.com/Turbo31150/browser-mcp-orchestrator) | Dual-browser DevTools MCP orchestration | Node.js |
+
+### :tools: AI Tooling & Automation
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [**jarvis-cowork**](https://github.com/Turbo31150/jarvis-cowork) | 579+ autonomous QA scripts, continuous self-repair | Python |
+| [**jarvis-mcp-toolkit**](https://github.com/Turbo31150/jarvis-mcp-toolkit) | 88+ MCP handlers for autonomous AI agents | Node.js / Py |
+| [**bibliotheque-prompts-multi-ia**](https://github.com/Turbo31150/bibliotheque-prompts-multi-ia) | 397+ optimized prompts for Claude, GPT, Gemini, Mistral | Markdown |
+| [**BABYSITTER-PRO-AUTOMATION**](https://github.com/Turbo31150/BABYSITTER-PRO-AUTOMATION) | Plateforme clé-en-main avec Frontend, Backend, Workflows n8n | Fullstack |
+
+</div>
+
+> **Note:** Afin de conserver une vitrine claire et professionnelle, des dizaines d'autres dépôts expérimentaux et outils internes ont été archivés et passés en privé.
+
+---
+
+## :computer: Cluster — La Creatrice
 
 ```
-928 agents | 6 GPUs (46GB VRAM) | 4 inference backends
-12 CLIs | 56 skills | 32 systemd services
-426K self-improve entries | 99.7% uptime
+┌─────────────────────────────────────────────────────────┐
+│  M1  │  Ryzen 5700X3D  │  6 GPUs  │  46GB VRAM        │  Primary: inference, voice, orchestration
+│  M2  │  3 GPUs         │  24GB VRAM                    │  Reasoning: DeepSeek-R1
+│  M3  │  Remote node    │  Backup                       │  Failover reasoning
+│  OL1 │  Ollama local   │  Lightweight                  │  Fast tasks, cloud fallback
+└─────────────────────────────────────────────────────────┘
 ```
 
-### Tech Stack
+---
 
-**AI/ML:** LM Studio, Ollama, vLLM, Whisper CUDA, Flash Attention
-**Languages:** Python, TypeScript, Bash, C#
-**Infra:** Docker Swarm, systemd, Redis, SQLite (WAL+mmap)
-**GPU:** NVIDIA RTX 3080 + RTX 2060 + 4x GTX 1660S
+## :bar_chart: GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Turbo31150&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=6366f1&text_color=c9d1d9&count_private=true" height="170" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Turbo31150&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=c9d1d9&langs_count=8" height="170" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Turbo31150&theme=tokyonight&hide_border=true&background=0d1117&ring=6366f1&fire=6366f1&currStreakLabel=6366f1" />
+
+</div>
+
+---
+
+## :envelope: Contact
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/franckdelmas00@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:franckdelmas00@gmail.com)
+[![GitHub](https://img.shields.io/badge/Turbo31150-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Turbo31150)
+[![Portfolio](https://img.shields.io/badge/franckdelmas.dev-0f172a?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/Turbo31150/franckdelmas.dev)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:6366f1&height=100&section=footer" width="100%" />
+
+*Building AI systems that think, trade, speak, and self-improve — autonomously.*
+
+</div>
