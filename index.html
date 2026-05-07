@@ -1,41 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Franc Delmas — AI/Linux Systems Architect</title>
-<meta name="description" content="AI/Linux Systems Architect | JARVIS OS Creator | 600+ AI Agents | 6 GPU Cluster | MCP Expert">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Franck Delmas — AI Systems Architect · JARVIS OS Creator</title>
+<meta name="description" content="AI Systems Architect · JARVIS OS Creator · 928 agents · 6 GPUs · MCP early adopter · Multi-agent / LLM Ops · Toulouse · Production-first autodidacte" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta property="og:title" content="Franck Delmas — AI Systems Architect" />
+<meta property="og:description" content="JARVIS OS · 928 agents · 6 GPUs · MIT open-source · Toulouse" />
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #0a0a0a; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-.container { max-width: 600px; text-align: center; padding: 40px 20px; }
-h1 { font-size: 2.5em; color: #6366f1; margin-bottom: 10px; }
-.subtitle { color: #9ca3af; font-size: 1.1em; margin-bottom: 30px; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 30px 0; }
-.stat { background: #1a1a2e; border-radius: 12px; padding: 20px; }
-.stat-number { font-size: 2em; color: #34d399; font-weight: bold; }
-.stat-label { color: #9ca3af; font-size: 0.85em; margin-top: 5px; }
-.links { margin-top: 30px; }
-.links a { display: inline-block; background: #6366f1; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 8px; font-weight: 500; transition: background 0.2s; }
-.links a:hover { background: #4f46e5; }
-.footer { margin-top: 40px; color: #4b5563; font-size: 0.85em; }
+  *,*::before,*::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0a0a0a; --bg-2: #111; --line: #222;
+    --fg: #ededed; --fg-2: #a0a0a0;
+    --accent: #00ffd1; --accent-2: #ff8c42;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: -apple-system, "Segoe UI", "Inter", system-ui, sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .container { max-width: 720px; text-align: center; }
+  .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(0,255,209,.08);
+    color: var(--accent);
+    border: 1px solid rgba(0,255,209,.25);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    margin-bottom: 24px;
+    font-family: "JetBrains Mono", monospace;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  h1 .a { color: var(--accent); }
+  h1 .b { color: var(--accent-2); }
+  .subtitle {
+    color: var(--fg-2);
+    font-size: 1.1em;
+    margin-bottom: 28px;
+    max-width: 580px;
+    margin-left: auto; margin-right: auto;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 32px 0;
+  }
+  @media (max-width: 600px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 12px;
+  }
+  .stat-number {
+    font-size: 1.6em;
+    color: var(--accent);
+    font-weight: 800;
+    font-family: "JetBrains Mono", "SF Mono", Consolas, monospace;
+    line-height: 1;
+  }
+  .stat-label {
+    color: var(--fg-2);
+    font-size: 0.78rem;
+    margin-top: 6px;
+  }
+  .links { margin-top: 28px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .links a {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.92rem;
+    transition: transform .15s, background .15s;
+    border: 1px solid var(--line);
+  }
+  .links a.primary {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .links a.primary:hover { background: var(--fg); border-color: var(--fg); }
+  .links a.ghost {
+    background: transparent;
+    color: var(--fg);
+  }
+  .links a.ghost:hover { background: var(--bg-2); }
+  .meta {
+    margin-top: 40px;
+    color: #4b5563;
+    font-size: 0.82em;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .pills { margin-top: 18px; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+  .pill {
+    padding: 4px 12px;
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    color: var(--fg-2);
+    font-family: "JetBrains Mono", monospace;
+  }
+  .pill .k { color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="container">
-<h1>Franc Delmas</h1>
-<p class="subtitle">AI / Linux Systems Architect</p>
-<div class="stats">
-<div class="stat"><div class="stat-number">600+</div><div class="stat-label">AI Agents</div></div>
-<div class="stat"><div class="stat-number">6</div><div class="stat-label">GPUs</div></div>
-<div class="stat"><div class="stat-number">87</div><div class="stat-label">MCP Tools</div></div>
-</div>
-<div class="links">
-<a href="https://github.com/Turbo31150">GitHub</a>
-<a href="https://github.com/Turbo31150/jarvis-linux">JARVIS OS</a>
-<a href="https://github.com/Turbo31150/awesome-local-ai">Awesome Local AI</a>
-</div>
-<p class="footer">Building AI systems that think, trade, speak, and self-improve — autonomously.</p>
+  <div class="badge">// AVAILABLE — CDI client final · Freelance · Consulting</div>
+
+  <h1>
+    Franck <span class="a">Delmas</span>
+  </h1>
+
+  <p class="subtitle">
+    AI Systems Architect · <span style="color: var(--accent-2);">JARVIS OS</span> Creator · Multi-agent / LLM Ops
+    <br/>
+    <strong style="color: var(--fg);">Production-first autodidacte</strong> · Toulouse, France
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-number">928</div><div class="stat-label">Agents IA</div></div>
+    <div class="stat"><div class="stat-number">6</div><div class="stat-label">GPUs cluster</div></div>
+    <div class="stat"><div class="stat-number">88+</div><div class="stat-label">MCP handlers</div></div>
+    <div class="stat"><div class="stat-number">106</div><div class="stat-label">Repos GitHub</div></div>
+  </div>
+
+  <div class="pills">
+    <span class="pill"><span class="k">CDI</span> · 85-95 K€ Toulouse</span>
+    <span class="pill"><span class="k">TJM</span> · 1 000-1 150 €/jour</span>
+    <span class="pill"><span class="k">MCP</span> · early adopter</span>
+    <span class="pill"><span class="k">Voice AI</span> · &lt;300ms</span>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Turbo31150" class="primary">GitHub Profile</a>
+    <a href="https://github.com/Turbo31150/jarvis-linux" class="ghost">JARVIS OS</a>
+    <a href="https://github.com/Turbo31150/Turbo31150/blob/main/PROJECTS.md" class="ghost">Catalogue projets</a>
+    <a href="https://www.linkedin.com/in/franck-hlb-80bb231b1/" class="ghost">LinkedIn</a>
+    <a href="mailto:franckdelmas00@gmail.com" class="ghost">Email</a>
+  </div>
+
+  <p class="meta">
+    // Mon GitHub est mon diplôme · 1.3 GB code · 17 hackathons · MIT open-source
+  </p>
 </div>
 </body>
 </html>
