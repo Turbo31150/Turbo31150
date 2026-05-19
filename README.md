@@ -6,7 +6,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:00ffd1&height=240&section=header&text=Franck%20Delmas&fontSize=58&fontColor=ffffff&fontAlignY=35&desc=AI%20Systems%20Architect%20%C2%B7%20JARVIS%20OS%20Creator%20%C2%B7%20Toulouse&descSize=20&descAlignY=58&animation=fadeIn" width="100%" />
 
 <!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1500&color=00FFD1&center=true&vCenter=true&width=720&lines=Multi-agent+orchestration+%E2%80%94+928+agents+in+prod;MCP+%2F+Claude+Agent+SDK+%E2%80%94+early+adopter;Voice+AI+%E2%80%94+Whisper+CUDA+%3C300ms;Trading+algorithmique+%E2%80%94+multi-model+consensus;Production-first+autodidact+%E2%80%94+106+repos%2C+1.3+GB+code" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1500&color=00FFD1&center=true&vCenter=true&width=720&lines=Multi-agent+orchestration+%E2%80%94+1%E2%80%AF000%2B+agents+in+prod;MCP+%2F+Claude+Agent+SDK+%E2%80%94+early+adopter;Voice+AI+%E2%80%94+Whisper+CUDA+%3C300ms;Trading+algorithmique+%E2%80%94+multi-model+consensus;Production-first+autodidact+%E2%80%94+106+repos%2C+1.3+GB+code" alt="Typing SVG" /></a>
 
 <br/><br/>
 
