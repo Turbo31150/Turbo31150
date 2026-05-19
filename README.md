@@ -36,9 +36,9 @@ Mon GitHub est mon diplôme : 106 repos · 1.3 GB de code original · 2 ans d'it
 
 <div align="center">
 
-| 🤖 928 | 🖥️ 6 | 🐙 106 | 🏆 17 | ⏱️ &lt;300ms | ⚙️ 88+ |
+| 🤖 1 000+ | 🖥️ 12 | 🐙 106 | 🏆 17 | ⏱️ &lt;300ms | ⚙️ 88+ |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **agents IA** en prod | **GPUs** cluster | **repos** GitHub | **hackathons** livrés | **latence voix** p95 | **MCP handlers** |
+| **agents IA** en prod | **GPUs** sur 6 machines | **repos** (44 publics) | **hackathons** livrés | **latence voix** p95 | **MCP handlers** |
 
 </div>
 
@@ -46,7 +46,7 @@ Mon GitHub est mon diplôme : 106 repos · 1.3 GB de code original · 2 ans d'it
 
 ## 🚀 Flagship — JARVIS OS
 
-> **Distributed AI Operating System.** 928 agents · 6 GPUs · MCP-native · score 98/100 Claude Code · MIT.
+> **Distributed AI Operating System.** 1 000+ agents · 6 machines / 12 GPUs cluster · MCP-native · score 98/100 Claude Code · MIT.
 
 <a href="https://github.com/Turbo31150/jarvis-linux">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Turbo31150&repo=jarvis-linux&theme=tokyonight&bg_color=0d1117&border_color=00ffd1&title_color=00ffd1&icon_color=ff8c42" alt="JARVIS OS" />
@@ -56,7 +56,7 @@ Mon GitHub est mon diplôme : 106 repos · 1.3 GB de code original · 2 ans d'it
 
 ```
 Layer 9  ─  Vocal / Conversational interface     (Whisper CUDA <300ms)
-Layer 8  ─  Multi-agent orchestration             (928 agents, MCP-native)
+Layer 8  ─  Multi-agent orchestration             (1 000+ agents, MCP-native)
 Layer 7  ─  Trading consensus engine              (multi-model GPT/Gemini/Claude)
 Layer 6  ─  Browser & web automation              (CDP dual-browser)
 Layer 5  ─  MCP tool registry                     (88+ handlers)
@@ -117,7 +117,7 @@ Layer 1  ─  Linux boot integration
 
 | Produit | Description | Prix |
 |---|---|---|
-| 🐧 **JARVIS OS Linux** | OS IA distribué — 928 agents, multi-GPU | 20k–120k€ |
+| 🐧 **JARVIS OS Linux** | OS IA distribué — 1 000+ agents, 12 GPUs sur 6 machines | 20k–120k€ |
 | 🧠 **JARVIS-OMEGA** | AI Control Plane Enterprise — 961 agents, 10 légions | 40k–250k€ |
 | 📈 **Trading Bot 5 GPUs** | MEXC, 50 stratégies, signaux < 200ms | 5k–80k€ |
 | ⚙️ **AI Pipelines Suite** | 6 modules Python production-ready | 2k–40k€ |
@@ -164,7 +164,7 @@ Pack Intégral (62 formations) : **399 €** — valeur 4 299 €
 
 | Domaine | Niveau | Preuve |
 |---|---|---|
-| Architecture IA distribuée | 🟧 **LEAD** | JARVIS OS · 928 agents · 6 GPUs |
+| Architecture IA distribuée | 🟧 **LEAD** | JARVIS OS · 1 000+ agents · 6 machines / 12 GPUs |
 | Multi-agent orchestration | 🟦 **EXPERT** | jarvis-mcp-toolkit · 88+ handlers |
 | MCP / Claude Agent SDK | 🟦 **EXPERT (early adopter)** | 5 repos MCP · jarvis-agent-sdk |
 | Trading algorithmique | 🟦 **EXPERT** | 22 itérations · TradeOracle live |
