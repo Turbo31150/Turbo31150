@@ -109,6 +109,33 @@ Layer 1  ─  Linux boot integration
 
 ---
 
+## 💰 Catalogue produits & formations — `jarvis-delmas.netlify.app`
+
+> **Site officiel** → [**jarvis-delmas.netlify.app**](https://jarvis-delmas.netlify.app) · paiement PayPal instantané + livraison email automatique
+
+### 🏢 Solutions Enterprise (20k–250k€)
+
+| Produit | Description | Prix |
+|---|---|---|
+| 🐧 **JARVIS OS Linux** | OS IA distribué — 928 agents, multi-GPU | 20k–120k€ |
+| 🧠 **JARVIS-OMEGA** | AI Control Plane Enterprise — 961 agents, 10 légions | 40k–250k€ |
+| 📈 **Trading Bot 5 GPUs** | MEXC, 50 stratégies, signaux < 200ms | 5k–80k€ |
+| ⚙️ **AI Pipelines Suite** | 6 modules Python production-ready | 2k–40k€ |
+| 📝 **PROMPT·VAULT** | 397+ prompts benchmarkés multi-modèles | 2k–15k€ |
+
+→ **Pitches PDF commerciaux** : 29€/unité · Pack 5 : 79€ · Catalogue complet : 49€
+
+### 📚 62 Formations IA (39–149€)
+
+Pack Intégral (62 formations) : **399 €** — valeur 4 299 €
+
+- 🟢 Débutant (39–49€) : Fondamentaux IA · Prompt Engineering · Vibe Coding · Copilot
+- 🔵 Intermédiaire (59–69€) : API OpenAI · Claude API · FastAPI IA · Whisper · Lumen
+- 🟣 Avancé (79–99€) : MCP Protocol · LangChain · MLOps · Fine-tuning · RAG · Trading IA
+- 🟡 Expert JARVIS (79–149€) : Architecture JARVIS OS · Cluster GPU · OpenClaw · Domino
+
+---
+
 ## 🛠️ Stack
 
 <div align="center">
