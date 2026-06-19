@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demander un pack ou service — Franck Delmas IA</title>
+<meta name="description" content="Choisissez votre pack d'automatisation IA ou un service à la carte. Audit gratuit, devis sous 48h, résultats garantis. Franck Delmas — Expert IA Toulouse.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+  --red:#e50914;--red2:#ff1f2e;
+  --bg:#0a0a0a;--bg2:#111;--bg3:#161616;--bg4:#1e1e1e;
+  --text:#fff;--muted:#999;--muted2:#555;
+  --gold:#f5a623;--green:#46d369;
+  --border:#1e1e1e;--border2:#2a2a2a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:#000;}::-webkit-scrollbar-thumb{background:var(--red);}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;padding:0 5%;height:62px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.logo{font-size:20px;font-weight:900;letter-spacing:-1px;}
+.logo .red{color:var(--red);}
+.nav-back{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);transition:.2s;}
+.nav-back:hover{color:#fff;}
+.nav-steps{display:flex;gap:0;align-items:center;}
+.nstep{font-size:12px;color:var(--muted2);padding:0 14px;display:flex;align-items:center;gap:6px;white-space:nowrap;}
+.nstep.active{color:#fff;font-weight:700;}
+.nstep.done{color:var(--green);}
+.nstep-num{width:22px;height:22px;border-radius:50%;border:1px solid var(--muted2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;}
+.nstep.active .nstep-num{background:var(--red);border-color:var(--red);color:#fff;}
+.nstep.done .nstep-num{background:var(--green);border-color:var(--green);color:#000;}
+.nsep{width:24px;height:1px;background:var(--border2);}
+@media(max-width:700px){.nav-steps{display:none;}}
+
+/* HERO */
+.page-hero{padding:60px 5% 50px;text-align:center;background:linear-gradient(180deg,#000,var(--bg));border-bottom:1px solid var(--border);}
+.page-hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(229,9,20,.1);border:1px solid rgba(229,9,20,.25);color:var(--red);padding:6px 16px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.page-hero h1{font-size:clamp(30px,5vw,58px);font-weight:900;letter-spacing:-2.5px;line-height:1.05;margin-bottom:14px;}
+.page-hero h1 span{color:var(--red);}
+.page-hero p{font-size:16px;color:var(--muted);max-width:560px;margin:0 auto;line-height:1.65;}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:1fr 420px;gap:24px;padding:40px 5% 80px;max-width:1300px;margin:0 auto;align-items:start;}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;}}
+
+/* ── ÉTAPE 1 — CHOIX TYPE ── */
+.step-block{margin-bottom:32px;}
+.step-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+.step-circle{width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step-circle.done{background:var(--green);color:#000;}
+.step-title{font-size:18px;font-weight:800;letter-spacing:-0.5px;}
+.step-sub{font-size:13px;color:var(--muted);margin-top:2px;}
+
+/* TYPE TOGGLE */
+.type-toggle{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--bg3);border:1px solid var(--border2);border-radius:10px;overflow:hidden;margin-bottom:32px;}
+.ttype{padding:22px 20px;cursor:pointer;border-right:1px solid var(--border2);transition:.25s;position:relative;}
+.ttype:last-child{border-right:none;}
+.ttype.selected{background:rgba(229,9,20,.06);border-bottom:2px solid var(--red);}
+.ttype-icon{font-size:28px;margin-bottom:10px;}
+.ttype-name{font-size:15px;font-weight:700;margin-bottom:4px;}
+.ttype-desc{font-size:12px;color:var(--muted);line-height:1.4;}
+.ttype-radio{position:absolute;top:14px;right:14px;width:18px;height:18px;border-radius:50%;border:2px solid var(--border2);transition:.2s;}
+.ttype.selected .ttype-radio{border-color:var(--red);background:var(--red);}
+.ttype.selected .ttype-radio::after{content:'';display:block;width:6px;height:6px;background:#fff;border-radius:50%;margin:4px auto 0;}
+
+/* PACKS GRID */
+.packs-choice{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:32px;}
+.pack-opt{background:var(--bg3);border:2px solid var(--border2);border-radius:10px;padding:22px 18px;cursor:pointer;transition:.25s;position:relative;overflow:hidden;}
+.pack-opt::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--border2);transition:.2s;}
+.pack-opt.selected{border-color:var(--red);}
+.pack-opt.selected::before{background:var(--red);}
+.pack-opt:hover{border-color:rgba(229,9,20,.4);}
+.pack-opt .pop-tag{position:absolute;top:10px;right:10px;font-size:9px;font-weight:800;padding:2px 8px;border-radius:20px;background:var(--red);color:#fff;}
+.pack-opt .gold-tag{position:absolute;top:10px;right:10px;font-size:9px;font-weight:800;padding:2px 8px;border-radius:20px;background:var(--gold);color:#000;}
+.po-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;margin-bottom:3px;}
+.po-price{font-size:22px;font-weight:900;color:#fff;margin-bottom:6px;}
+.po-price .curr{font-size:13px;vertical-align:top;margin-top:3px;display:inline-block;color:var(--muted);}
+.po-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-bottom:10px;}
+.po-includes{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.po-includes li{font-size:11px;color:var(--muted);display:flex;gap:6px;}
+.po-includes .ic{color:var(--green);flex-shrink:0;}
+.pack-opt.selected .po-name{color:var(--red);}
+.radio-check{position:absolute;bottom:14px;right:14px;width:20px;height:20px;border-radius:50%;border:2px solid var(--border2);transition:.2s;}
+.pack-opt.selected .radio-check{border-color:var(--red);background:var(--red);}
+.pack-opt.selected .radio-check::after{content:'✓';display:block;font-size:11px;font-weight:900;color:#fff;text-align:center;line-height:16px;}
+
+/* SERVICES GRID */
+.svcs-choice{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:32px;}
+@media(max-width:700px){.svcs-choice{grid-template-columns:1fr 1fr;}}
+.svc-opt{background:var(--bg3);border:2px solid var(--border2);border-radius:8px;padding:18px 14px;cursor:pointer;transition:.25s;position:relative;}
+.svc-opt.selected{border-color:var(--red);}
+.svc-opt:hover{border-color:rgba(229,9,20,.35);}
+.svc-opt .so-icon{font-size:28px;margin-bottom:8px;}
+.svc-opt .so-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.svc-opt .so-price{font-size:12px;color:var(--red);font-weight:700;}
+.svc-opt .so-desc{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;}
+.svc-radio{position:absolute;top:10px;right:10px;width:16px;height:16px;border-radius:50%;border:2px solid var(--border2);transition:.2s;}
+.svc-opt.selected .svc-radio{border-color:var(--red);background:var(--red);}
+.svc-opt.selected .svc-radio::after{content:'';display:block;width:5px;height:5px;background:#fff;border-radius:50%;margin:3.5px auto 0;}
+
+/* FORM */
+.form-section{background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:30px;margin-bottom:32px;}
+.form-section h3{font-size:16px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:8px;}
+.form-section h3 .lbl{font-size:10px;font-weight:700;background:rgba(229,9,20,.12);color:var(--red);padding:2px 8px;border-radius:3px;letter-spacing:1px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+.form-row.full{grid-template-columns:1fr;}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field label{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.3px;}
+.field input,.field select,.field textarea{background:var(--bg4);border:1px solid var(--border2);border-radius:6px;padding:12px 14px;font-size:14px;color:#fff;font-family:'Inter',sans-serif;outline:none;transition:.2s;width:100%;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(229,9,20,.08);}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted2);}
+.field select option{background:var(--bg3);}
+.field textarea{resize:vertical;min-height:110px;line-height:1.6;}
+.field .hint{font-size:11px;color:var(--muted2);margin-top:4px;}
+
+/* URGENCY SELECTOR */
+.urgency-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.urg-opt{background:var(--bg4);border:1px solid var(--border2);border-radius:6px;padding:12px 10px;cursor:pointer;transition:.2s;text-align:center;}
+.urg-opt.selected{border-color:var(--red);background:rgba(229,9,20,.06);}
+.urg-opt:hover{border-color:rgba(229,9,20,.3);}
+.urg-icon{font-size:20px;margin-bottom:4px;}
+.urg-lbl{font-size:11px;font-weight:600;color:var(--muted);}
+.urg-opt.selected .urg-lbl{color:#fff;}
+
+/* SECTOR TAGS */
+.sector-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.stag{padding:7px 14px;border-radius:20px;border:1px solid var(--border2);font-size:12px;font-weight:600;cursor:pointer;transition:.2s;color:var(--muted);}
+.stag:hover{border-color:rgba(229,9,20,.4);color:#fff;}
+.stag.selected{background:rgba(229,9,20,.1);border-color:var(--red);color:#fff;}
+
+/* GDPR */
+.gdpr-row{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;}
+.gdpr-row input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:var(--red);cursor:pointer;margin-top:2px;}
+.gdpr-row label{font-size:12px;color:var(--muted);line-height:1.5;cursor:pointer;}
+
+/* SUBMIT */
+.submit-btn{width:100%;padding:18px;border-radius:8px;border:none;background:var(--red);color:#fff;font-size:17px;font-weight:900;cursor:pointer;transition:.25s;display:flex;align-items:center;justify-content:center;gap:10px;letter-spacing:.2px;}
+.submit-btn:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(229,9,20,.3);}
+.submit-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.submit-note{text-align:center;font-size:12px;color:var(--muted2);margin-top:10px;}
+
+/* SUCCESS STATE */
+.success-screen{display:none;text-align:center;padding:60px 30px;}
+.success-screen.visible{display:block;}
+.success-icon{font-size:64px;margin-bottom:20px;}
+.success-screen h2{font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:10px;}
+.success-screen h2 span{color:var(--green);}
+.success-screen p{font-size:15px;color:var(--muted);max-width:420px;margin:0 auto 30px;line-height:1.65;}
+.success-details{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:22px;text-align:left;max-width:400px;margin:0 auto 28px;}
+.sd-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.sd-row:last-child{border-bottom:none;}
+.sd-row .k{color:var(--muted);}
+.sd-row .v{font-weight:700;color:#fff;}
+
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:16px;position:sticky;top:80px;}
+.recap-card{background:var(--bg3);border:1px solid var(--border2);border-radius:12px;padding:26px;overflow:hidden;position:relative;}
+.recap-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);}
+.recap-title{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:18px;text-transform:uppercase;letter-spacing:1px;}
+.recap-selection{margin-bottom:18px;}
+.recap-sel-name{font-size:22px;font-weight:900;letter-spacing:-1px;color:#fff;min-height:28px;}
+.recap-sel-price{font-size:32px;font-weight:900;color:var(--red);line-height:1;margin-top:4px;min-height:38px;}
+.recap-sel-desc{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5;min-height:18px;}
+.recap-divider{height:1px;background:var(--border2);margin:16px 0;}
+.recap-items{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.recap-items li{font-size:13px;display:flex;gap:8px;color:var(--muted);}
+.recap-items li .ic{color:var(--green);flex-shrink:0;}
+.recap-items li.empty{color:var(--muted2);font-style:italic;}
+.recap-cta{margin-top:18px;font-size:13px;color:var(--muted2);text-align:center;display:flex;align-items:center;justify-content:center;gap:6px;}
+.recap-cta .shield{color:var(--green);}
+
+.trust-card{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:22px;}
+.trust-items{display:flex;flex-direction:column;gap:12px;}
+.trust-item{display:flex;gap:12px;align-items:flex-start;}
+.trust-icon{font-size:22px;flex-shrink:0;}
+.trust-body strong{font-size:13px;font-weight:700;display:block;margin-bottom:2px;}
+.trust-body p{font-size:12px;color:var(--muted);line-height:1.4;}
+
+.timeline-card{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:22px;}
+.tl-title{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;}
+.tl-steps{display:flex;flex-direction:column;gap:0;}
+.tl-step{display:flex;gap:14px;padding-bottom:14px;position:relative;}
+.tl-step:last-child{padding-bottom:0;}
+.tl-step::after{content:'';position:absolute;left:13px;top:28px;bottom:0;width:1px;background:var(--border2);}
+.tl-step:last-child::after{display:none;}
+.tl-dot{width:26px;height:26px;border-radius:50%;background:rgba(229,9,20,.15);border:1px solid rgba(229,9,20,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--red);flex-shrink:0;}
+.tl-body strong{font-size:13px;font-weight:700;display:block;}
+.tl-body p{font-size:11px;color:var(--muted);margin-top:2px;}
+
+/* HIDDEN */
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+
+/* REVEAL */
+.fade{opacity:0;transform:translateY(16px);transition:.5s ease;}
+.fade.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-back">← Retour</a>
+  <div class="nav-steps">
+    <div class="nstep active" id="ns1"><div class="nstep-num">1</div> Choisir</div>
+    <div class="nsep"></div>
+    <div class="nstep" id="ns2"><div class="nstep-num">2</div> Votre projet</div>
+    <div class="nsep"></div>
+    <div class="nstep" id="ns3"><div class="nstep-num">3</div> Confirmation</div>
+  </div>
+  <div class="logo">FD<span class="red">.</span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="badge">🚀 Réponse sous 48h</div>
+  <h1>Demander un <span>pack</span><br>ou un service</h1>
+  <p>Choisissez ce dont vous avez besoin, décrivez votre projet en 2 minutes. Je vous réponds avec une proposition concrète et chiffrée.</p>
+</div>
+
+<div class="layout">
+
+  <!-- COL GAUCHE -->
+  <div>
+
+    <!-- ÉTAPE 1 — TYPE -->
+    <div class="step-block fade" id="block1">
+      <div class="step-header">
+        <div class="step-circle" id="sc1">1</div>
+        <div>
+          <div class="step-title">Que souhaitez-vous ?</div>
+          <div class="step-sub">Pack complet ou service à la carte</div>
+        </div>
+      </div>
+      <div class="type-toggle">
+        <div class="ttype selected" id="tt-pack" onclick="selectType('pack')">
+          <div class="ttype-icon">📦</div>
+          <div class="ttype-name">Un pack complet</div>
+          <div class="ttype-desc">Système IA clés en main, installation, formation, suivi inclus</div>
+          <div class="ttype-radio"></div>
+        </div>
+        <div class="ttype" id="tt-service" onclick="selectType('service')">
+          <div class="ttype-icon">🔧</div>
+          <div class="ttype-name">Un service à la carte</div>
+          <div class="ttype-desc">Audit, conseil, dépannage, calcul infra, formation ponctuelle</div>
+          <div class="ttype-radio"></div>
+        </div>
+      </div>
+
+      <!-- PACKS -->
+      <div id="tab-packs" class="tab-content active">
+        <div class="packs-choice">
+          <div class="pack-opt" id="p-starter" onclick="selectPack('starter','Starter','490€','Votre premier système IA opérationnel en 1 semaine.')">
+            <div class="po-name">Starter</div>
+            <div class="po-price"><span class="curr">€</span>490</div>
+            <div class="po-desc">Indépendants · Auto-entrepreneurs</div>
+            <ul class="po-includes">
+              <li><span class="ic">✓</span> Audit 2h + 1 automatisation</li>
+              <li><span class="ic">✓</span> Installation complète</li>
+              <li><span class="ic">✓</span> 1 mois support email</li>
+            </ul>
+            <div class="radio-check"></div>
+          </div>
+          <div class="pack-opt" id="p-business" onclick="selectPack('business','Business','1 490€','Système complet pour automatiser gestion et contenu.')">
+            <div class="pop-tag">⭐ + demandé</div>
+            <div class="po-name">Business</div>
+            <div class="po-price"><span class="curr">€</span>1 490</div>
+            <div class="po-desc">Boutiques · PME · Artisans</div>
+            <ul class="po-includes">
+              <li><span class="ic">✓</span> 5 automatisations sur mesure</li>
+              <li><span class="ic">✓</span> Dashboard IA personnalisé</li>
+              <li><span class="ic">✓</span> Formation 1 jour + 3 mois support</li>
+            </ul>
+            <div class="radio-check"></div>
+          </div>
+          <div class="pack-opt" id="p-pro" onclick="selectPack('pro','Pro','3 900€','Architecture complète, formation approfondie, suivi durable.')">
+            <div class="po-name">Pro</div>
+            <div class="po-price"><span class="curr">€</span>3 900</div>
+            <div class="po-desc">Entreprises · Multi-sites</div>
+            <ul class="po-includes">
+              <li><span class="ic">✓</span> 15 automatisations + ERP/CRM</li>
+              <li><span class="ic">✓</span> Formation 3 jours + vidéos</li>
+              <li><span class="ic">✓</span> 6 mois support prioritaire</li>
+            </ul>
+            <div class="radio-check"></div>
+          </div>
+          <div class="pack-opt" id="p-industrie" onclick="selectPack('industrie','Industrie','Sur devis','Système IA complet sur site, conception → certification.')">
+            <div class="gold-tag">🏆 Industrie</div>
+            <div class="po-name">Industrie</div>
+            <div class="po-price" style="font-size:16px;padding-top:4px;">Sur devis</div>
+            <div class="po-desc">Usines · Sites complexes</div>
+            <ul class="po-includes">
+              <li><span class="ic">✓</span> Audit terrain + cluster IA</li>
+              <li><span class="ic">✓</span> Automatisations illimitées</li>
+              <li><span class="ic">✓</span> SLA garanti · support 5j/7</li>
+            </ul>
+            <div class="radio-check"></div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--muted2);margin-bottom:28px;">💡 Pas sûr du bon pack ? Choisissez "Industrie" ou décrivez votre besoin dans le formulaire — je vous conseille gratuitement.</div>
+      </div>
+
+      <!-- SERVICES -->
+      <div id="tab-services" class="tab-content">
+        <div class="svcs-choice">
+          <div class="svc-opt" id="s-audit" onclick="selectService('audit','Audit Système','À partir de 290€')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">🔍</div>
+            <div class="so-name">Audit Système</div>
+            <div class="so-price">À partir de 290€</div>
+            <div class="so-desc">Cartographie flux, ROI chiffré, rapport écrit</div>
+          </div>
+          <div class="svc-opt" id="s-infra" onclick="selectService('infra','Calcul Infrastructure','À partir de 190€')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">🧮</div>
+            <div class="so-name">Calcul Infra</div>
+            <div class="so-price">À partir de 190€</div>
+            <div class="so-desc">GPU/CPU/RAM optimal, cloud vs local chiffré</div>
+          </div>
+          <div class="svc-opt" id="s-conseil" onclick="selectService('conseil','Conseil Installation','À partir de 150€')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">💡</div>
+            <div class="so-name">Conseil Install.</div>
+            <div class="so-price">À partir de 150€</div>
+            <div class="so-desc">Architecture proposée, devis chiffré</div>
+          </div>
+          <div class="svc-opt" id="s-depannage" onclick="selectService('depannage','Dépannage & Optim.','À partir de 90€/h')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">🔧</div>
+            <div class="so-name">Dépannage</div>
+            <div class="so-price">À partir de 90€/h</div>
+            <div class="so-desc">Diagnostic + correction + rapport</div>
+          </div>
+          <div class="svc-opt" id="s-devis" onclick="selectService('devis','Devis & Faisabilité','Gratuit')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">📋</div>
+            <div class="so-name">Devis Gratuit</div>
+            <div class="so-price" style="color:var(--green);">Gratuit</div>
+            <div class="so-desc">Faisabilité + estimation coût + délai sous 48h</div>
+          </div>
+          <div class="svc-opt" id="s-formation" onclick="selectService('formation','Formation à la carte','À partir de 800€/jour')">
+            <div class="svc-radio"></div>
+            <div class="so-icon">🎓</div>
+            <div class="so-name">Formation</div>
+            <div class="so-price">800€/jour</div>
+            <div class="so-desc">Sur mesure, présentiel ou visio, PDF + vidéos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ÉTAPE 2 — FORMULAIRE -->
+    <div class="step-block fade" id="block2">
+      <div class="step-header">
+        <div class="step-circle" id="sc2">2</div>
+        <div>
+          <div class="step-title">Votre projet</div>
+          <div class="step-sub">2 minutes — pas besoin d'être technique</div>
+        </div>
+      </div>
+
+      <!-- IDENTITÉ -->
+      <div class="form-section">
+        <h3>👤 Vous <span class="lbl">Requis</span></h3>
+        <div class="form-row">
+          <div class="field">
+            <label>Prénom *</label>
+            <input type="text" id="f-prenom" placeholder="Marie" required>
+          </div>
+          <div class="field">
+            <label>Nom *</label>
+            <input type="text" id="f-nom" placeholder="Dupont" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Email *</label>
+            <input type="email" id="f-email" placeholder="vous@entreprise.fr" required>
+          </div>
+          <div class="field">
+            <label>Téléphone (optionnel)</label>
+            <input type="tel" id="f-tel" placeholder="+33 6 00 00 00 00">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Entreprise / Structure</label>
+            <input type="text" id="f-entreprise" placeholder="Nom de votre entreprise">
+          </div>
+          <div class="field">
+            <label>Votre rôle / poste</label>
+            <input type="text" id="f-role" placeholder="Gérant, Directeur, Technicien…">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTEUR -->
+      <div class="form-section">
+        <h3>🏢 Votre secteur <span class="lbl">Optionnel</span></h3>
+        <div class="sector-tags" id="sector-tags">
+          <div class="stag" onclick="toggleSector(this,'E-commerce')">🛒 E-commerce</div>
+          <div class="stag" onclick="toggleSector(this,'Industrie')">🏭 Industrie</div>
+          <div class="stag" onclick="toggleSector(this,'PME & Bureau')">🏢 PME & Bureau</div>
+          <div class="stag" onclick="toggleSector(this,'Santé')">🏥 Santé</div>
+          <div class="stag" onclick="toggleSector(this,'Juridique')">⚖️ Juridique</div>
+          <div class="stag" onclick="toggleSector(this,'Formation & RH')">🎓 Formation & RH</div>
+          <div class="stag" onclick="toggleSector(this,'BTP & Chantier')">🏗️ BTP</div>
+          <div class="stag" onclick="toggleSector(this,'Logistique')">🚚 Logistique</div>
+          <div class="stag" onclick="toggleSector(this,'Autre')">✦ Autre</div>
+        </div>
+      </div>
+
+      <!-- PROJET -->
+      <div class="form-section">
+        <h3>💬 Votre besoin <span class="lbl">Important</span></h3>
+        <div class="form-row full">
+          <div class="field">
+            <label>Décrivez votre situation actuelle *</label>
+            <textarea id="f-situation" placeholder="Ex : Je gère une boutique en ligne avec 50 commandes/jour. Je passe 3h par jour à répondre aux mails clients et à mettre à jour mes stocks manuellement..." required></textarea>
+            <div class="hint">Plus c'est précis, plus ma réponse sera adaptée. Pas besoin d'être technique.</div>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="field">
+            <label>Qu'est-ce que vous voulez automatiser ou améliorer ?</label>
+            <textarea id="f-objectif" placeholder="Ex : Réponses SAV automatiques, mise à jour stocks, génération de fiches produits, rapports quotidiens…" style="min-height:80px;"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Budget approximatif</label>
+            <select id="f-budget">
+              <option value="">— Sélectionner —</option>
+              <option>Moins de 500€</option>
+              <option>500€ – 1 500€</option>
+              <option>1 500€ – 4 000€</option>
+              <option>Plus de 4 000€</option>
+              <option>Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Comment avez-vous trouvé ce site ?</label>
+            <select id="f-source">
+              <option value="">— Sélectionner —</option>
+              <option>LinkedIn</option>
+              <option>Google</option>
+              <option>Recommandation</option>
+              <option>GitHub</option>
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- URGENCE -->
+      <div class="form-section">
+        <h3>⏱️ Délai souhaité</h3>
+        <div class="urgency-opts">
+          <div class="urg-opt" id="u-urgent" onclick="selectUrgency('urgent')">
+            <div class="urg-icon">🔥</div>
+            <div class="urg-lbl">Urgent<br>Cette semaine</div>
+          </div>
+          <div class="urg-opt selected" id="u-normal" onclick="selectUrgency('normal')">
+            <div class="urg-icon">📅</div>
+            <div class="urg-lbl">Normal<br>Ce mois-ci</div>
+          </div>
+          <div class="urg-opt" id="u-flexible" onclick="selectUrgency('flexible')">
+            <div class="urg-icon">🌿</div>
+            <div class="urg-lbl">Flexible<br>Pas de rush</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RGPD + SUBMIT -->
+      <div class="form-section">
+        <h3>✅ Validation</h3>
+        <div class="gdpr-row">
+          <input type="checkbox" id="gdpr1" required>
+          <label for="gdpr1">J'accepte que mes informations soient utilisées pour me répondre. Aucune revente, aucun spam. Vos données restent sur mon infrastructure — pas de cloud tiers.</label>
+        </div>
+        <div class="gdpr-row" style="margin-bottom:24px;">
+          <input type="checkbox" id="gdpr2">
+          <label for="gdpr2">Je souhaite recevoir des ressources gratuites sur l'automatisation IA (optionnel).</label>
+        </div>
+        <button class="submit-btn" id="submit-btn" onclick="submitForm()">
+          <span id="btn-text">📨 Envoyer ma demande</span>
+        </button>
+        <div class="submit-note">Réponse sous 48h · Premier échange toujours gratuit · Aucun engagement</div>
+      </div>
+    </div>
+
+  </div><!-- fin col gauche -->
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- RECAP -->
+    <div class="recap-card fade">
+      <div class="recap-title">Votre sélection</div>
+      <div class="recap-selection">
+        <div class="recap-sel-name" id="recap-name">Rien de sélectionné</div>
+        <div class="recap-sel-price" id="recap-price" style="color:var(--muted2);">—</div>
+        <div class="recap-sel-desc" id="recap-desc">Choisissez un pack ou service à gauche</div>
+      </div>
+      <div class="recap-divider"></div>
+      <ul class="recap-items" id="recap-items">
+        <li class="empty">Sélectionnez une option…</li>
+      </ul>
+      <div class="recap-cta"><span class="shield">🛡️</span> Résultats garantis ou remboursé</div>
+    </div>
+
+    <!-- TRUST -->
+    <div class="trust-card fade">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-icon">⚡</div>
+          <div class="trust-body"><strong>Réponse sous 48h</strong><p>Je lis chaque demande et je réponds personnellement avec une proposition concrète.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔒</div>
+          <div class="trust-body"><strong>100% RGPD — local</strong><p>Vos données ne quittent jamais votre infrastructure. Zéro cloud US imposé.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">✅</div>
+          <div class="trust-body"><strong>Résultats garantis</strong><p>Si le système livré ne correspond pas au cahier des charges, je corrige sans frais.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🎯</div>
+          <div class="trust-body"><strong>Premier échange gratuit</strong><p>Pas de frais de dossier, pas d'engagement. On parle d'abord, on signe ensuite.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline-card fade">
+      <div class="tl-title">Ce qui se passe ensuite</div>
+      <div class="tl-steps">
+        <div class="tl-step">
+          <div class="tl-dot">1</div>
+          <div class="tl-body"><strong>Je lis votre demande</strong><p>Analyse de votre situation dans les 24h</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot">2</div>
+          <div class="tl-body"><strong>Je vous réponds</strong><p>Proposition concrète + chiffrée sous 48h</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot">3</div>
+          <div class="tl-body"><strong>Appel de calage (1h)</strong><p>Gratuit · Pour affiner le périmètre</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot">4</div>
+          <div class="tl-body"><strong>Démarrage du projet</strong><p>Selon délai choisi · Contrat signé</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- fin sidebar -->
+
+</div><!-- fin layout -->
+
+<!-- SUCCESS SCREEN (caché par défaut) -->
+<div class="success-screen" id="success-screen" style="max-width:600px;margin:80px auto;">
+  <div class="success-icon">✅</div>
+  <h2>Demande envoyée !<br><span>À très bientôt.</span></h2>
+  <p>Votre demande a été transmise. Je la lis personnellement et vous réponds sous 48h avec une proposition concrète et chiffrée.</p>
+  <div class="success-details" id="success-details"></div>
+  <a href="index.html" class="submit-btn" style="max-width:340px;margin:0 auto;display:flex;text-decoration:none;">← Retour au site</a>
+</div>
+
+<script>
+// ── STATE ──
+const state = {
+  type: 'pack',
+  selection: null,
+  selName: '',
+  selPrice: '',
+  selDesc: '',
+  urgency: 'normal',
+  sectors: []
+};
+
+// ── TYPE TOGGLE ──
+function selectType(type) {
+  state.type = type;
+  document.getElementById('tt-pack').classList.toggle('selected', type === 'pack');
+  document.getElementById('tt-service').classList.toggle('selected', type === 'service');
+  document.getElementById('tab-packs').classList.toggle('active', type === 'pack');
+  document.getElementById('tab-services').classList.toggle('active', type === 'service');
+  clearSelection();
+}
+
+function clearSelection() {
+  state.selection = null;
+  state.selName = ''; state.selPrice = ''; state.selDesc = '';
+  updateRecap();
+}
+
+// ── PACK SELECTION ──
+const packItems = {
+  starter:   ['Audit de votre activité (2h)', '1 automatisation clé', 'Installation complète', 'Guide PDF + 1 mois support'],
+  business:  ['5 automatisations sur mesure', 'Dashboard IA personnalisé', 'Formation équipe 1 journée', '3 mois support prioritaire'],
+  pro:       ['15 automatisations + ERP/CRM', 'Formation 3 jours + vidéos', '6 mois support prioritaire', 'Calcul infra + MAJ incluses'],
+  industrie: ['Audit terrain + cartographie', 'Cluster IA sur mesure', 'Automatisations illimitées', 'SLA garanti · support 5j/7']
+};
+
+function selectPack(id, name, price, desc) {
+  ['starter','business','pro','industrie'].forEach(p =>
+    document.getElementById('p-'+p).classList.remove('selected')
+  );
+  document.getElementById('p-'+id).classList.add('selected');
+  state.selection = id; state.selName = name; state.selPrice = price; state.selDesc = desc;
+  updateRecap(packItems[id]);
+  updateStepIndicator();
+}
+
+// ── SERVICE SELECTION ──
+function selectService(id, name, price) {
+  ['audit','infra','conseil','depannage','devis','formation'].forEach(s =>
+    document.getElementById('s-'+s).classList.remove('selected')
+  );
+  document.getElementById('s-'+id).classList.add('selected');
+  state.selection = id; state.selName = name; state.selPrice = price;
+  state.selDesc = 'Service à la carte · Réponse sous 48h';
+  updateRecap(['Analyse personnalisée','Rapport écrit inclus','Sans engagement','Réponse sous 48h']);
+  updateStepIndicator();
+}
+
+// ── URGENCY ──
+function selectUrgency(u) {
+  ['urgent','normal','flexible'].forEach(x =>
+    document.getElementById('u-'+x).classList.remove('selected')
+  );
+  document.getElementById('u-'+u).classList.add('selected');
+  state.urgency = u;
+}
+
+// ── SECTORS ──
+function toggleSector(el, name) {
+  el.classList.toggle('selected');
+  if (el.classList.contains('selected')) {
+    if (!state.sectors.includes(name)) state.sectors.push(name);
+  } else {
+    state.sectors = state.sectors.filter(s => s !== name);
+  }
+}
+
+// ── RECAP ──
+function updateRecap(items) {
+  document.getElementById('recap-name').textContent = state.selName || 'Rien de sélectionné';
+  document.getElementById('recap-price').textContent = state.selPrice || '—';
+  document.getElementById('recap-price').style.color = state.selPrice ? 'var(--red)' : 'var(--muted2)';
+  document.getElementById('recap-desc').textContent = state.selDesc || 'Choisissez un pack ou service à gauche';
+  const ul = document.getElementById('recap-items');
+  if (items && items.length) {
+    ul.innerHTML = items.map(i => `<li><span class="ic">✓</span> ${i}</li>`).join('');
+  } else {
+    ul.innerHTML = '<li class="empty">Sélectionnez une option…</li>';
+  }
+}
+
+// ── STEP INDICATOR ──
+function updateStepIndicator() {
+  document.getElementById('ns1').classList.remove('active');
+  document.getElementById('ns1').classList.add('done');
+  document.getElementById('sc1').classList.add('done');
+  document.getElementById('sc1').textContent = '✓';
+  document.getElementById('ns2').classList.add('active');
+}
+
+// ── SUBMIT ──
+function submitForm() {
+  const prenom = document.getElementById('f-prenom').value.trim();
+  const nom    = document.getElementById('f-nom').value.trim();
+  const email  = document.getElementById('f-email').value.trim();
+  const situation = document.getElementById('f-situation').value.trim();
+  const gdpr1  = document.getElementById('gdpr1').checked;
+
+  if (!prenom || !nom || !email || !situation) {
+    alert('Merci de remplir les champs obligatoires (Prénom, Nom, Email, Situation).');
+    return;
+  }
+  if (!email.includes('@')) { alert('Email invalide.'); return; }
+  if (!gdpr1) { alert('Merci d\'accepter la politique de confidentialité pour continuer.'); return; }
+
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  document.getElementById('btn-text').textContent = '⏳ Envoi en cours…';
+
+  // Build mailto
+  const subject = encodeURIComponent(`[JARVIS] Demande ${state.selName || 'service'} — ${prenom} ${nom}`);
+  const urgencyLabel = {urgent:'🔥 Urgent (cette semaine)',normal:'📅 Normal (ce mois-ci)',flexible:'🌿 Flexible'}[state.urgency];
+  const body = encodeURIComponent(
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NOUVELLE DEMANDE — JARVIS OS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SÉLECTION : ${state.selName || 'Non précisé'} (${state.selPrice || '—'})
+
+CONTACT
+Prénom    : ${prenom}
+Nom       : ${nom}
+Email     : ${email}
+Téléphone : ${document.getElementById('f-tel').value || '—'}
+Entreprise: ${document.getElementById('f-entreprise').value || '—'}
+Rôle      : ${document.getElementById('f-role').value || '—'}
+
+SECTEUR : ${state.sectors.join(', ') || 'Non précisé'}
+
+SITUATION ACTUELLE :
+${situation}
+
+OBJECTIF / À AUTOMATISER :
+${document.getElementById('f-objectif').value || '—'}
+
+BUDGET : ${document.getElementById('f-budget').value || 'Non précisé'}
+URGENCE : ${urgencyLabel}
+SOURCE  : ${document.getElementById('f-source').value || '—'}
+
+RGPD newsletter : ${document.getElementById('gdpr2').checked ? 'Oui' : 'Non'}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`
+  );
+
+  // Open mailto
+  window.location.href = `mailto:miningexpert31@gmail.com?subject=${subject}&body=${body}`;
+
+  // Show success after 1.5s
+  setTimeout(() => {
+    document.querySelector('.layout').style.display = 'none';
+    document.querySelector('.page-hero').style.display = 'none';
+    const ss = document.getElementById('success-screen');
+    ss.style.display = 'block';
+    document.getElementById('success-details').innerHTML = `
+      <div class="sd-row"><span class="k">Sélection</span><span class="v">${state.selName || '—'}</span></div>
+      <div class="sd-row"><span class="k">Tarif</span><span class="v">${state.selPrice || '—'}</span></div>
+      <div class="sd-row"><span class="k">Contact</span><span class="v">${prenom} ${nom}</span></div>
+      <div class="sd-row"><span class="k">Email</span><span class="v">${email}</span></div>
+      <div class="sd-row"><span class="k">Délai</span><span class="v">${urgencyLabel}</span></div>
+      <div class="sd-row"><span class="k">Réponse estimée</span><span class="v" style="color:var(--green);">Sous 48h</span></div>
+    `;
+    document.getElementById('ns2').classList.remove('active');
+    document.getElementById('ns2').classList.add('done');
+    document.getElementById('ns3').classList.add('active');
+  }, 1500);
+}
+
+// ── REVEAL ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }});
+}, { threshold: 0.05 });
+document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
