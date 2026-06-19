@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accès confirmé — Formation Agent IA</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--red:#e50914;--cyan:#00d4ff;--gold:#ffd700;--green:#00e676;--bg:#0a0a0a;--bg2:#111;--bg3:#161616;--border:#222;--muted:#888;--muted2:#555;}
+body{background:var(--bg);color:#fff;font-family:'Inter',-apple-system,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;}
+.confetti-wrap{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+.c{position:absolute;width:8px;height:8px;border-radius:2px;animation:fall linear forwards;}
+@keyframes fall{0%{transform:translateY(-20px) rotate(0deg);opacity:1;}100%{transform:translateY(110vh) rotate(720deg);opacity:0;}}
+.card{background:var(--bg2);border:1px solid #1a1a1a;border-radius:20px;padding:56px 48px;max-width:600px;width:100%;text-align:center;position:relative;z-index:1;}
+.check-ring{width:80px;height:80px;border-radius:50%;background:rgba(0,230,118,.12);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;font-size:36px;animation:popIn .5s cubic-bezier(.34,1.56,.64,1) both;}
+@keyframes popIn{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}
+.badge{display:inline-block;background:rgba(0,212,255,.12);border:1px solid rgba(0,212,255,.3);color:var(--cyan);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:20px;margin-bottom:20px;text-transform:uppercase;}
+h1{font-size:32px;font-weight:900;letter-spacing:-1px;margin-bottom:12px;}
+h1 span{color:var(--cyan);}
+.sub{font-size:16px;color:var(--muted);line-height:1.6;margin-bottom:36px;}
+.dl-box{background:#0d1a1f;border:1px solid rgba(0,212,255,.25);border-radius:12px;padding:28px;margin-bottom:28px;}
+.dl-title{font-size:13px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;}
+.dl-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--cyan);color:#000;font-weight:800;font-size:16px;padding:16px 32px;border-radius:8px;text-decoration:none;transition:.2s;margin-bottom:10px;}
+.dl-btn:hover{background:#00b8d9;transform:translateY(-2px);}
+.dl-note{font-size:12px;color:var(--muted);margin-top:6px;}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px;}
+.extra-card{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:left;}
+.extra-icon{font-size:24px;margin-bottom:8px;}
+.extra-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;}
+.extra-desc{font-size:12px;color:var(--muted);line-height:1.4;}
+.email-line{font-size:13px;color:var(--muted);padding:14px;background:var(--bg3);border-radius:8px;margin-bottom:24px;}
+.email-line strong{color:#fff;}
+.btn-back{display:inline-block;color:var(--muted);font-size:13px;text-decoration:none;border:1px solid var(--border);padding:10px 22px;border-radius:6px;transition:.2s;}
+.btn-back:hover{color:#fff;border-color:#444;}
+#pack-label{color:var(--gold);font-weight:800;}
+</style>
+</head>
+<body>
+<div class="confetti-wrap" id="confetti"></div>
+<div class="card">
+  <div class="check-ring">✓</div>
+  <div class="badge">Accès confirmé</div>
+  <h1>Bienvenue dans la <span>formation</span> !</h1>
+  <p class="sub">Ton paiement a été validé. Télécharge ton guide et retrouve tous tes accès ci-dessous.</p>
+
+  <div class="dl-box">
+    <div class="dl-title">⬇️ Téléchargement immédiat</div>
+    <a href="agent-ia-guide.pdf" download="Construis-ton-premier-agent-IA.pdf" class="dl-btn">
+      📄 Construis ton premier agent IA (sans coder)
+    </a>
+    <p class="dl-note">PDF · 4.4 MB · 20 slides · Guide complet</p>
+  </div>
+
+  <div class="extras" id="extras-essentiel" style="display:none">
+    <div class="extra-card">
+      <div class="extra-icon">🎬</div>
+      <div class="extra-title">6 modules vidéo</div>
+      <div class="extra-desc">Accès envoyé par email dans les 24h</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">📋</div>
+      <div class="extra-title">12 templates agents</div>
+      <div class="extra-desc">Bibliothèque de prompts JARVIS incluse</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">💬</div>
+      <div class="extra-title">Discord privé</div>
+      <div class="extra-desc">Communauté + support hebdomadaire</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">🔴</div>
+      <div class="extra-title">Session live démarrage</div>
+      <div class="extra-desc">Lien de réservation envoyé par email</div>
+    </div>
+  </div>
+
+  <div class="extras" id="extras-pro" style="display:none">
+    <div class="extra-card">
+      <div class="extra-icon">🎬</div>
+      <div class="extra-title">6 modules vidéo</div>
+      <div class="extra-desc">Accès complet immédiat</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">🤝</div>
+      <div class="extra-title">Coaching 1:1</div>
+      <div class="extra-desc">3 sessions de 60min avec Franck</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">🛠️</div>
+      <div class="extra-title">Déploiement personnalisé</div>
+      <div class="extra-desc">On déploie ensemble dans ton business</div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">📞</div>
+      <div class="extra-title">Support prioritaire 30j</div>
+      <div class="extra-desc">Accès direct Telegram / WhatsApp</div>
+    </div>
+  </div>
+
+  <div class="email-line">📧 Un email de confirmation a été envoyé à <strong id="email-display">ton adresse</strong></div>
+
+  <a href="formation-agent-ia.html" class="btn-back">← Retour à la formation</a>
+</div>
+
+<script>
+// Confettis
+const colors=['#00d4ff','#ffd700','#e50914','#00e676','#fff'];
+const wrap=document.getElementById('confetti');
+for(let i=0;i<60;i++){
+  const d=document.createElement('div');
+  d.className='c';
+  d.style.cssText=`left:${Math.random()*100}%;background:${colors[i%5]};animation-duration:${1.5+Math.random()*2}s;animation-delay:${Math.random()*1.5}s;`;
+  wrap.appendChild(d);
+}
+
+// Détecter le pack depuis l'URL
+const p=new URLSearchParams(location.search);
+const pack=p.get('pack')||'essentiel';
+const email=p.get('email')||'';
+if(email) document.getElementById('email-display').textContent=decodeURIComponent(email);
+if(pack==='essentiel') document.getElementById('extras-essentiel').style.display='grid';
+if(pack==='pro') document.getElementById('extras-pro').style.display='grid';
+
+// Déclencher le téléchargement auto après 1s
+setTimeout(()=>{
+  const a=document.createElement('a');
+  a.href='agent-ia-guide.pdf';
+  a.download='Construis-ton-premier-agent-IA.pdf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+},1000);
+</script>
+</body>
+</html>
